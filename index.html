@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сакина — хадж и умра без суеты</title>
+<meta name="description" content="Хадж и умра из Москвы: небольшие группы, проживание рядом с мечетью, опытные наставники и спокойное сопровождение на каждом шаге пути.">
+<meta name="theme-color" content="#1f2a44">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Сакина — хадж и умра без суеты">
+<meta property="og:description" content="Небольшие группы, проживание рядом с мечетью, наставники и спокойное сопровождение в Мекке и Медине.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1713239060784-e6ed820a0715?auto=format&fit=crop&w=1600&q=75">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231f2a44'/%3E%3Cpath d='M12 3.5 15 9l5.5 3-5.5 3-3 5.5L9 15l-5.5-3L9 9z' fill='none' stroke='%23e9cd94' stroke-width='1.3'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter+Tight:wght@400;500;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TravelAgency","name":"Сакина — хадж и умра","description":"Организация хаджа и умры: небольшие группы, проживание рядом с мечетью, сопровождение наставников.","areaServed":"RU","knowsAbout":["Хадж","Умра","Паломничество в Мекку и Медину"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","availableLanguage":["ru"],"url":"https://wa.me/79391020031"},"makesOffer":[{"@type":"Offer","name":"Рамадан у Каабы"},{"@type":"Offer","name":"Хадж"},{"@type":"Offer","name":"Мекка и Медина"},{"@type":"Offer","name":"Долгая умра"},{"@type":"Offer","name":"Умра за 5 дней"}]}
+</script>
+
+<noscript><style>.preloader{display:none}[data-reveal]{animation:none!important}</style></noscript>
+<style>
+/* ============================================================
+   1. ТОКЕНЫ
+   ============================================================ */
+:root{
+  --bg:#fff;
+  --ink:#1f2a44;            /* глубокий синий — основной текст */
+  --ink-faded:rgba(31,42,68,.2);
+  --ink-half:rgba(31,42,68,.5);
+  --ink-deep:#0e1118;
+  --dark-bg:#090b10;
+  --accent:#9a6a17;         /* тёмная латунь — контраст с белым 4.7:1 */
+  --accent-soft:#e9cd94;    /* светлое золото для линий на тёмном */
+  --white:#fff;
+  --black:#000;
+  --charcoal:#535353;
+  --mushroom:#e9e7e1;
+  --light-grey:#f3f1ec;
+
+  --font-sans:"Inter Tight",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-display:"Cormorant Garamond",ui-serif,Georgia,"Times New Roman",serif;
+  --font-condensed:"Oswald","Arial Narrow",Arial,sans-serif;
+
+  --s-03125:.3125rem;--s-0375:.375rem;--s-05:.5rem;--s-0625:.625rem;--s-075:.75rem;--s-0875:.875rem;
+  --s-1:1rem;--s-1125:1.125rem;--s-125:1.25rem;--s-1375:1.375rem;--s-15:1.5rem;--s-1625:1.625rem;
+  --s-175:1.75rem;--s-1875:1.875rem;--s-2:2rem;--s-225:2.25rem;--s-25:2.5rem;--s-2625:2.625rem;
+  --s-3:3rem;--s-3125:3.125rem;--s-325:3.25rem;--s-375:3.75rem;--s-425:4.25rem;--s-5:5rem;
+  --s-6875:6.875rem;--s-7375:7.375rem;--s-875:8.75rem;--s-10:10rem;--s-125r:12.5rem;--s-155:15.5rem;
+  --s-16:16rem;--s-20:20rem;
+
+  --sp-1:.35rem;--sp-2:.75rem;--sp-3:1.1rem;--sp-4:1.5rem;--sp-5:2rem;--sp-6:2.75rem;
+
+  --lh-90:.9;--lh-100:1;--lh-120:1.2;--lh-140:1.4;--lh-150:1.5;
+  --r-0125:.125rem;--r-sm:.25rem;--r-hover:.275rem;--r-0375:.375rem;--r-0625:.625rem;
+
+  --grid-cols:12;--gutter-x:.75rem;--gutter-y:1.5rem;--container-pad:1.25rem;
+  --ease-out:all .3s cubic-bezier(.5,1,.89,1);
+  --ease-wd:all .45s cubic-bezier(.76,0,.24,1);
+}
+
+/* ============================================================
+   2. БАЗА
+   ============================================================ */
+*{box-sizing:border-box;margin:0;padding:0;scrollbar-width:none;-ms-overflow-style:none}
+::-webkit-scrollbar{display:none}
+html{font-size:1.1111vw}
+@media (min-width:1560px){html{font-size:17.3333px}}
+@media (max-width:768px){html{font-size:16px}}
+html,body{max-width:100vw;overflow:clip}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:1rem;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+nav :focus-visible,.hero-banner :focus-visible,.bg-dark :focus-visible{outline-color:var(--accent-soft)}
+::selection{background:var(--accent);color:#fff}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+section{position:relative;margin:0 auto}
+.u-relative{position:relative}
+.icon{display:inline-block;vertical-align:middle}
+.icon svg{width:100%;height:100%;display:block}
+
+/* сетка */
+.container{padding-inline:var(--container-pad);width:100%;margin-inline:auto}
+.container-small{max-width:calc(100% - var(--s-375)*2);width:100%;margin-inline:auto}
+.container-large{width:100%;max-width:calc(100% - 1.5rem);margin-inline:auto}
+.u-grid{display:grid;grid-template-columns:repeat(var(--grid-cols),minmax(0,1fr));column-gap:var(--gutter-x);row-gap:var(--gutter-y);width:100%}
+.u-grid.no-gap{column-gap:0}
+.col-2{grid-column-end:span 2}.col-3{grid-column-end:span 3}.col-4{grid-column-end:span 4}.col-5{grid-column-end:span 5}.col-6{grid-column-end:span 6}.col-7{grid-column-end:span 7}.col-8{grid-column-end:span 8}.col-9{grid-column-end:span 9}
+.col-10{grid-column-end:span 10}.col-12{grid-column-end:span 12}
+.offset-1{grid-column-start:2}.offset-2{grid-column-start:3}.offset-3{grid-column-start:4}.offset-4{grid-column-start:5}
+.offset-8{grid-column-start:9}.offset-10{grid-column-start:11}
+
+/* типографика */
+.t-body{font:500 var(--s-0875)/var(--lh-150) var(--font-sans)}
+.t-body_sm{font:500 var(--s-075)/var(--lh-120) var(--font-sans)}
+.t-body_quote{font:italic 500 var(--s-2)/var(--lh-120) var(--font-display);text-wrap:pretty}
+.t-title-italic{font:italic 500 var(--s-1125)/var(--lh-120) var(--font-display)}
+.t-body_italic{font:italic 500 var(--s-1375)/var(--lh-120) var(--font-display)}
+.h3{font:400 var(--s-2625)/var(--lh-100) var(--font-display);text-transform:uppercase}
+.h4{font:500 var(--s-15)/var(--lh-120) var(--font-sans)}
+.section-title{font:400 var(--s-375)/var(--lh-100) var(--font-display);text-align:center;text-transform:uppercase}
+.layout-title{font:500 var(--s-1125)/var(--lh-120) var(--font-condensed);text-transform:uppercase}
+.layout-title_md{font:400 var(--s-1)/var(--lh-120) var(--font-condensed);text-transform:uppercase}
+.layout-title_sm{font:400 var(--s-0875)/var(--lh-120) var(--font-condensed)}
+.quote-author{font:600 var(--s-0875)/var(--lh-140) var(--font-sans);letter-spacing:.175em;text-transform:uppercase}
+.t-balance{text-wrap:balance}
+.is-faded{opacity:.5}
+.footer-component .is-faded,.travel-globe_head .is-faded,.quote-credits_wrap .is-faded,.bg-white .is-faded{opacity:.72}.is-faded_2{opacity:.2}.is-sans{font-family:var(--font-sans)}.lh-150{line-height:var(--lh-150)}.is-std_case{text-transform:none}
+.text-indent-4col{text-indent:calc(100%/var(--grid-cols)*4)}
+.text-indent-2col{text-indent:calc(100%/var(--grid-cols)*2)}
+.quote-mark{line-height:0;font-family:var(--font-display);font-size:var(--s-225)}
+.quote-mark_xl{line-height:0;font-family:var(--font-display);font-size:var(--s-325);margin-bottom:var(--s-125)}
+
+.v-flex_left-med{display:flex;flex-flow:column;align-items:flex-start;row-gap:var(--sp-5)}
+.v-flex_left-small{display:flex;flex-flow:column;align-items:flex-start;row-gap:var(--s-125);position:relative}
+.v-flex_left-xs{display:flex;flex-flow:column;align-items:flex-start;row-gap:var(--sp-2)}
+.v-flex_center{display:flex;flex-flow:column;align-items:center;row-gap:var(--s-1875)}
+.v-flex_center-xs{display:flex;flex-flow:column;align-items:center;row-gap:var(--sp-2)}
+
+section.padding-large{padding-block:var(--s-20)}
+section.padding-top-large-bottom-medium{padding-top:var(--s-20);padding-bottom:var(--s-10)}
+section.padding-none{padding-block:0}
+section.bg-white{background:var(--white)}
+section.bg-dark{background:var(--dark-bg);color:#fff}
+
+/* декоративная сетка-линии поверх страницы */
+.grid-overlay{position:fixed;inset:0;height:100svh;width:100%;pointer-events:none;z-index:2;mix-blend-mode:difference;opacity:.1}
+.grid-line{position:absolute;top:0;width:.5px;height:100%;background:#fff}
+.grid-line-1{left:var(--sp-2)}.grid-line-5{left:50%}.grid-line-9{right:var(--sp-2)}
+.grid-overlay_container{position:absolute;inset:0;height:100%}
+.grid-overlay_grid{height:100%;position:absolute;inset:0;column-gap:0}
+.grid-line_col{position:relative}
+.grid-line_inner{position:absolute;top:0;width:.5px;height:100%;background:#fff}
+.grid-line-2{left:0}.grid-line-8{right:0}.grid-line-3{right:0}.grid-line-4{left:0}.grid-line-6{right:0}.grid-line-7{left:0}
+.grid-overlay_small-wrap{position:relative;height:100%}
+.grid-overlay_container.container-small,.grid-overlay_container.container-large{inset:0;margin:auto}
+
+/* ============================================================
+   3. КНОПКИ
+   ============================================================ */
+.btn{--btn-border:.03125rem solid rgba(255,255,255,.2);display:flex;justify-content:center;align-items:center;gap:var(--sp-3);cursor:pointer;transition:var(--ease-out)}
+.btn-text{font-family:var(--font-sans);font-size:var(--s-0875);white-space:nowrap;font-weight:500;line-height:var(--lh-150);transition:var(--ease-out)}
+.btn-icon{width:var(--s-0875);position:relative}
+.btn-icon svg{width:100%;height:100%}
+.btn-inner{display:flex;align-items:center;position:relative}
+.btn-tab,.btn-cta,.btn-standard{width:var(--s-75);min-height:var(--s-25);padding-inline:var(--s-1);border:var(--btn-border)}
+.btn-cta .btn-icon,.btn-standard .btn-icon{position:absolute;left:100%;display:flex;justify-content:center;align-items:center;opacity:0;transform:scale(0);transition:var(--ease-out)}
+@media (hover:hover) and (pointer:fine){
+  .btn-cta:hover .btn-text,.btn-standard:hover .btn-text{transform:translateX(-.5rem)}
+  .btn-cta:hover .btn-icon,.btn-standard:hover .btn-icon{opacity:1;transform:scale(1)}
+}
+.btn-tab{color:#fff;background:0 0;border-radius:.125rem}
+nav .btn-tab{background:rgba(31,42,68,.2)}
+.btn-cta{border-radius:var(--r-0125);color:#fff;z-index:1;background:0 0;position:relative;overflow:hidden}
+.nav-right .btn-cta{background:rgba(31,42,68,.15)}
+@media (hover:hover) and (pointer:fine){
+  nav .btn-tab:hover,.nav-right .btn-cta:hover{background:var(--accent);border-color:var(--accent);color:#fff;border-radius:.275rem}
+}
+.btn-tab-active{background:var(--accent)!important;border-color:var(--accent)!important;color:#fff!important;border-radius:.275rem}
+.btn-standard{width:var(--s-10);height:var(--s-3125);border-radius:var(--r-0125);color:currentColor;z-index:1;background:0 0;position:relative;overflow:hidden}
+@media (hover:hover) and (pointer:fine){.btn-standard:hover{border-radius:var(--r-hover);background:#fff;border-color:#fff;color:var(--accent)}}
+
+.btn-large{width:100%;min-height:var(--s-6875);border-radius:var(--r-0125);background:var(--light-grey);color:var(--ink);border:var(--btn-border);position:relative;overflow:hidden}
+.btn-large .btn-icon{position:absolute;left:100%;display:flex;justify-content:center;align-items:center;opacity:0;transform:scale(0);transition:var(--ease-out)}
+@media (hover:hover) and (pointer:fine){
+  .btn-large:hover{border-radius:var(--r-0625);background:#fff;color:var(--accent)}
+  .btn-large:hover .btn-text{transform:translateX(-.5rem)}
+  .btn-large:hover .btn-icon{opacity:1;transform:scale(1)}
+  .btn-large.hover-orange:hover{background:var(--accent);color:#fff}
+  .btn-large.hover-blue:hover{background:var(--ink);color:#fff}
+}
+
+/* Кнопка с фото-превью (герой) */
+.btn-image-hover{width:calc(100% - var(--s-375) + 12px);min-height:var(--sp-6);padding:var(--sp-1) var(--sp-5);border:var(--btn-border);border-left:none;border-right:none;border-radius:0;color:#fff;background:0 0;position:relative;justify-content:center;align-items:center;display:flex;transition:var(--ease-out)}
+.btn-preview-image{position:absolute;top:50%;left:0;width:100%;aspect-ratio:11.625/13.125;transform:translateY(-50%);opacity:0;clip-path:inset(50% 0%);border-radius:var(--r-hover);overflow:clip;pointer-events:none;transition:var(--ease-out)}
+.btn-preview-image::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(0,0,0,.05)}
+.btn-preview-image img{width:100%;height:100%;object-fit:cover}
+.btn-image-hover .btn-content-wrapper{width:100%;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;transition:var(--ease-out)}
+.btn-image-hover .btn-icon{display:flex;justify-content:center;align-items:center}
+.btn-image-hover .btn-icon svg{width:.5625rem;height:.6875rem}
+@media (hover:hover) and (pointer:fine){
+  .btn-image-hover:hover{border-top:.03125rem solid transparent;border-bottom:.03125rem solid transparent}
+  .btn-image-hover:hover .btn-content-wrapper{width:90%}
+  .btn-image-hover:hover .btn-preview-image{opacity:1;clip-path:inset(0%)}
+}
+
+/* Кнопка-карточка с фото (глобус, футер) */
+.btn-image{width:100%;height:var(--s-6875);padding:var(--sp-1) var(--sp-5);color:#fff;border-radius:var(--r-0125);position:relative;overflow:clip;display:flex;justify-content:center;align-items:center;transition:var(--ease-out)}
+.btn-image .image-with-overlay{position:absolute;inset:0}
+.btn-image .btn-content-wrapper{width:30%;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;transition:var(--ease-out)}
+.btn-image .btn-icon{display:flex;justify-content:center;align-items:center}
+.btn-image .btn-icon svg{width:.5625rem;height:.6875rem}
+@media (hover:hover) and (pointer:fine){.btn-image:hover{border-radius:var(--r-0625)}.btn-image:hover .btn-content-wrapper{width:27.5%}}
+.image-with-overlay{position:relative}
+.image-with-overlay_img{width:100%;height:100%;object-fit:cover}
+.image-overlay{position:absolute;inset:0;background:rgba(0,0,0,var(--overlay-opacity,0));pointer-events:none}
+
+/* «Liquid glass» */
+.liquid-glass__filter{position:absolute;inset:0;z-index:0;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);isolation:isolate;pointer-events:none;border-radius:inherit}
+.liquid-glass__overlay{position:absolute;inset:0;z-index:1;pointer-events:none;border-radius:inherit;background:rgba(255,255,255,var(--glass-opacity,.05))}
+.liquid-glass__specular{--glass-scale:1;--glass-highlight:rgba(255,255,255,.2);position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:inherit;overflow:hidden;transition:var(--ease-out);
+  box-shadow:inset calc(1px*var(--glass-scale)) calc(1px*var(--glass-scale)) 0 var(--glass-highlight),inset 0 0 calc(5px*var(--glass-scale)) var(--glass-highlight)}
+.liquid-glass_wrap{position:relative;border-radius:.125rem;overflow:clip;transition:var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.liquid-glass_wrap:hover{border-radius:var(--r-hover)}nav li:hover .liquid-glass__specular{display:none}}
+.liquid-glass_wrap .btn,nav li .btn{position:relative;z-index:3}
+
+.dashed-divider_white{width:100%;height:.5px;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4) 2px,transparent 2px,transparent 4px)}
+.dashed-divider_blue{width:100%;height:.5px;background-image:repeating-linear-gradient(90deg,rgba(44,55,75,.4) 0,rgba(44,55,75,.4) 2px,transparent 2px,transparent 4px)}
+
+/* ============================================================
+   4. НАВИГАЦИЯ
+   ============================================================ */
+nav{position:fixed;top:0;left:0;width:100%;height:5rem;z-index:9999;display:flex;align-items:center;color:#fff;pointer-events:none;transition:color .3s}
+body[data-nav-theme=dark] nav{color:var(--ink)}
+.nav-contain{padding-inline:var(--container-pad)}
+.nav-layout.u-grid{align-items:center}
+.nav-col{text-align:center;position:relative;z-index:1;pointer-events:none}
+nav .btn,nav a,nav button{pointer-events:auto}
+.nav-ul{display:flex;column-gap:var(--sp-1);justify-content:flex-start}
+.nav-ul.nav-right{justify-content:flex-end}
+nav li{position:relative;border-radius:.125rem;overflow:clip}
+body[data-nav-theme=dark] nav .btn-tab,body[data-nav-theme=dark] nav .btn-cta{border-color:var(--ink-faded)}
+body[data-nav-theme=dark] nav .btn-tab{background:rgba(31,42,68,.06);color:var(--ink)}
+body[data-nav-theme=dark] nav .nav-right .btn-cta{background:rgba(31,42,68,.06);color:var(--ink)}
+body[data-nav-theme=dark] nav li:hover .btn{color:#fff}
+.nav-layout .btn{border:none}
+.nav-logo-link{display:inline-flex;flex-direction:column;align-items:center;gap:.3rem;color:currentColor;line-height:1}
+.logo-word{font:500 1.55rem/1 var(--font-condensed);letter-spacing:.2em;text-transform:uppercase;padding-left:.2em}
+.logo-mark{width:1.15rem;height:1.15rem}
+.nav-layout_mobile{display:none}
+body[data-menu-open=true] .nav-col{z-index:9999}
+body[data-menu-open=true] nav .btn-tab{color:var(--ink);background:rgba(31,42,68,.08);border:0}
+body[data-menu-open=true] nav .btn-tab.btn-tab-active{color:#fff}
+body[data-menu-open=true] nav .nav-right .btn-cta{color:#fff}
+
+/* ============================================================
+   5. МЕНЮ (панель)
+   ============================================================ */
+.menu-component{position:fixed;inset:0;width:100%;height:100dvh;z-index:9998;visibility:hidden;pointer-events:none;transition:visibility 0s .6s}
+.menu-component.open{visibility:visible;pointer-events:auto;transition:visibility 0s}
+.menu-bg{position:absolute;inset:0;z-index:1;opacity:0;pointer-events:none;-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);background:rgba(31,42,68,.3);transition:opacity .4s}
+.menu-component.open .menu-bg{opacity:1;pointer-events:auto}
+.menu-wrap{position:relative;z-index:2;height:100%;padding-block:var(--sp-2);pointer-events:none}
+.menu-contain{width:100%;height:100%;padding-inline:var(--sp-2);margin-inline:auto}
+.menu-layout{height:100%}
+.menu-el{height:100%;background:#fff;padding:var(--s-5) var(--s-0625) var(--sp-2);color:var(--ink);pointer-events:auto;clip-path:inset(0% 100% 0% 0% round .25rem);display:flex;flex-flow:column;justify-content:flex-start;align-items:flex-start;row-gap:var(--s-1);position:relative;transition:clip-path .6s cubic-bezier(.76,0,.24,1)}
+.menu-component.open .menu-el{clip-path:inset(0% 0% 0% 0% round .25rem)}
+.menu-inner{width:100%;padding-inline:var(--s-125);display:flex;flex-flow:column;align-items:flex-start;row-gap:var(--s-125);margin-top:2.5rem}
+.nav-link{display:flex;flex-direction:column;font-size:var(--s-1);color:var(--ink);row-gap:var(--s-0625);padding-block:var(--s-03125);transition:var(--ease-out)}
+.menu-dropdown_wrap{display:flex;flex-flow:column;width:100%}
+.menu-dropdown_item{width:100%;position:relative;overflow:hidden}
+.menu-dropdown_item::before{content:"";position:absolute;top:0;left:var(--sp-4);right:var(--sp-4);height:.5px;transition:var(--ease-out);background-image:repeating-linear-gradient(90deg,rgba(44,55,75,.4) 0,rgba(44,55,75,.4) 2px,transparent 2px,transparent 4px)}
+.menu-dropdown_item:last-child::after{content:"";position:absolute;bottom:0;left:var(--sp-4);right:var(--sp-4);height:.5px;transition:var(--ease-out);background-image:repeating-linear-gradient(90deg,rgba(44,55,75,.4) 0,rgba(44,55,75,.4) 2px,transparent 2px,transparent 4px)}
+.menu-dropdown_item.submenu-open::before,.menu-dropdown_item.submenu-open+.menu-dropdown_item::before,.menu-dropdown_item.submenu-open:last-child::after{left:0;right:0}
+.menu-dropdown_title{display:block;width:100%;text-align:left;cursor:pointer;font:italic 500 var(--s-1375)/1.2 var(--font-display);padding:var(--s-125) var(--sp-4) var(--s-05);transition:var(--ease-out)}
+.menu-dropdown_content{display:grid;grid-template-rows:0fr;transition:var(--ease-out);overflow:hidden}
+.menu-dropdown_item.submenu-open .menu-dropdown_content{grid-template-rows:1fr}
+.menu-dropdown_inner{overflow:hidden}
+.menu-dropdown_inner ul{display:flex;flex-flow:column;align-items:flex-start;padding:0 var(--sp-4) var(--sp-6)}
+.menu-dropdown_inner li{padding:var(--sp-1) 0}
+.menu-dropdown_inner li a,.menu-dropdown_inner li button{font:500 var(--s-1375)/1.3 var(--font-sans);color:#000;transition:var(--ease-out);text-align:left}
+@media (hover:hover) and (pointer:fine){
+  .menu-dropdown_inner ul:hover li a,.menu-dropdown_inner ul:hover li button{color:rgba(0,0,0,.5)}
+  .menu-dropdown_inner ul:hover li:hover a,.menu-dropdown_inner ul:hover li:hover button{color:#000}
+}
+.menu-footer{width:100%;margin-top:auto}
+.menu-footer .btn-large{height:var(--s-5);min-height:var(--s-5)}
+.menu-img_wrap{position:relative;width:100%;height:100%;border-radius:var(--r-sm);overflow:clip;pointer-events:auto;opacity:0;transition:opacity .6s .15s}
+.menu-component.open .menu-img_wrap{opacity:1}
+.menu-img_item{position:absolute;inset:0;opacity:0;transition:opacity .5s}
+.menu-img_item.is-on{opacity:1}
+.menu-img_item img{width:100%;height:100%;object-fit:cover}
+.menu-col.is-desktop{pointer-events:none}
+.mobile-menu_top{display:none}
+.mobile-menu_close{display:none}
+
+/* ============================================================
+   6. ГЕРОЙ
+   ============================================================ */
+.page-main,.page-content{position:relative}
+.hero-banner{width:100%;height:200svh;color:#fff;position:relative}
+.mist-transition{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.mist-transition_image-container{position:sticky;top:0;width:100%;height:100svh;z-index:1;opacity:0;transform-origin:bottom;will-change:transform,opacity;transition:opacity .3s;transform:translateZ(0)}
+.mist-transition_image-container.visible{opacity:1}
+.mist-transition_image{width:100%;height:100%;object-fit:cover;object-position:top;display:block;background:linear-gradient(360deg,#fff,transparent 15%)}
+.hero-banner_wrapper{position:relative;z-index:0;width:100%;height:100svh;will-change:transform;transform:translateZ(0)}
+.hero-banner_bg{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;background:#3a3f4a}
+.hero-banner_bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform:scale(1.14);transition:transform 3.4s cubic-bezier(.16,1,.3,1)}
+body.is-ready .hero-banner_bg img{transform:scale(1);animation:heroDrift 26s ease-in-out 3.4s infinite alternate}
+@keyframes heroDrift{from{transform:scale(1) translate3d(0,0,0)}to{transform:scale(1.07) translate3d(-1%,-.6%,0)}}
+.hero-banner_overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(9,11,16,.30) 0%,rgba(9,11,16,.06) 32%,rgba(9,11,16,.18) 60%,rgba(9,11,16,.58) 100%);transition:var(--ease-out)}
+.hero-banner_content{position:absolute;inset:0;z-index:2;width:100%;height:100%;display:grid;grid-template-rows:1fr 1fr}
+[data-reveal]{animation:reveal-opacity 1.4s both,reveal-transform 1.4s cubic-bezier(.16,1,.3,1) both;animation-play-state:paused}
+body.is-ready [data-reveal]{animation-play-state:running}
+@keyframes reveal-opacity{0%{opacity:0}to{opacity:1}}
+@keyframes reveal-transform{0%{transform:translateY(20rem)}to{transform:translateY(0)}}
+.hero-banner_contain{grid-row:2;display:flex;align-items:center}
+.hero-banner_layout{align-items:center}
+.hero-banner_col.left-col{padding-left:calc(var(--s-375) - 12px)}
+.hero-banner_col .t-title-italic{font-size:var(--s-1375);text-shadow:0 1px 18px rgba(9,11,16,.7),0 0 2px rgba(9,11,16,.5)}
+.hero-banner_title-contain{grid-row:3;display:flex;align-items:flex-end;padding-bottom:var(--sp-4)}
+.hero-banner_title-wrapper,.hero-banner_title-inner{width:100%}
+.hero-banner_title{text-shadow:0 2px 40px rgba(9,11,16,.35);white-space:nowrap;text-transform:uppercase;font:400 var(--s-16)/1 var(--font-condensed);text-align:center;will-change:filter}
+.clouds-overlay_wrap{position:absolute;top:0;left:0;width:100%;height:100svh;z-index:2;pointer-events:none}
+.clouds-overlay_wrap img{width:100%;height:auto}
+
+/* ============================================================
+   7. ВСТУПЛЕНИЕ, БАННЕР, ЗАГОЛОВКИ
+   ============================================================ */
+.home-section{position:relative}
+.home-intro_col{grid-column:2/span 7}
+.text-scroll-fade{--mask-position:-40;
+  -webkit-mask-image:linear-gradient(#000 calc(var(--mask-position)*1%),rgba(0,0,0,.9) calc((var(--mask-position) + 5)*1%),rgba(0,0,0,.8) calc((var(--mask-position) + 10)*1%),rgba(0,0,0,.6) calc((var(--mask-position) + 20)*1%),rgba(0,0,0,.4) calc((var(--mask-position) + 30)*1%),rgba(0,0,0,.2) calc((var(--mask-position) + 35)*1%),rgba(0,0,0,.1) calc((var(--mask-position) + 40)*1%),rgba(0,0,0,.1) 100%);
+          mask-image:linear-gradient(#000 calc(var(--mask-position)*1%),rgba(0,0,0,.9) calc((var(--mask-position) + 5)*1%),rgba(0,0,0,.8) calc((var(--mask-position) + 10)*1%),rgba(0,0,0,.6) calc((var(--mask-position) + 20)*1%),rgba(0,0,0,.4) calc((var(--mask-position) + 30)*1%),rgba(0,0,0,.2) calc((var(--mask-position) + 35)*1%),rgba(0,0,0,.1) calc((var(--mask-position) + 40)*1%),rgba(0,0,0,.1) 100%)}
+.scribble-el{position:absolute;pointer-events:none}
+.scribble-el svg{width:100%;height:auto;fill:none}
+.home-intro_svg{width:180%;min-width:12em;bottom:-75%;right:-10%}
+.title-section_svg{width:160%;max-width:40em;top:80%;left:50%;transform:translate(-50%)}
+.home-quote_svg{width:80%;position:relative;left:-5%}
+.home-quote_svg svg{stroke:var(--ink);stroke-width:1.1px}
+.scribble_wrap{position:relative}
+
+.tall-parallax-banner{background:var(--bg);width:100%;position:relative}
+.tall-parallax-banner_inner{width:100%;height:150svh;position:relative;overflow:hidden}
+.tall-parallax-banner .container-large{position:relative;z-index:1;padding-top:var(--s-10)}
+.img-fill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.wd-mnt .img-fill{object-position:77% 50%;top:10%!important;height:90%}
+.tall-parallax-banner .layout-col .layout-title{color:var(--ink)}
+.tall-parallax-banner .layout-col .t-body{color:var(--ink)}
+
+/* ============================================================
+   8. КАРТОЧКИ-ФЛИППЕР
+   ============================================================ */
+.card-flick{position:relative;z-index:2;width:100%;border-radius:var(--r-sm);overflow:hidden}
+.card-flick_grid{display:flex;width:100%}
+.card-flick_item{position:relative;display:block;flex-shrink:0;width:16.6667%;height:85svh;overflow:hidden;cursor:pointer}
+.card-flick_item-inner{position:relative;width:100%;height:100%;overflow:hidden}
+.card-flick_image{position:absolute;inset:0;overflow:hidden}
+.card-flick_image::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.1);transition:opacity .4s}
+.card-flick_item.is-active .card-flick_image::after{opacity:1}
+.card-flick_image img{width:100%;min-width:50vw;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+@media (hover:hover) and (pointer:fine){.card-flick_item:hover .card-flick_image img{transform:scale(1.05)}}
+.card-flick_overlay{position:absolute;inset:0;z-index:1;pointer-events:none;-webkit-backdrop-filter:blur(7.5px);backdrop-filter:blur(7.5px);background:rgba(0,0,0,.01)}
+.card-flick_content{position:absolute;inset:0;width:30vw;padding:var(--sp-6);color:#fff;opacity:0;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}
+.card-flick_item.is-active .card-flick_content{pointer-events:auto}
+.card-flick_content-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+.card-flick_header{display:flex;flex-direction:column;gap:var(--sp-2);max-width:30ch}
+.card-flick_title{font-size:var(--s-2625);line-height:var(--lh-100);text-wrap:balance;text-shadow:0 1px 24px rgba(0,0,0,.25)}
+.card-flick_footer{display:flex;flex-direction:column;align-items:flex-start;gap:var(--sp-4)}
+.card-flick_meta{display:flex;align-items:center;column-gap:var(--sp-3);row-gap:var(--sp-3);font-size:var(--s-1)}
+.card-flick_meta-item{white-space:nowrap;font-weight:600;line-height:1;display:inline-block}
+.itinerary-item_meta-divider{display:inline-block;vertical-align:-.1em;width:1px;height:1em;background:#fff}
+.card-flick_excerpt{font-size:var(--s-1);line-height:var(--lh-140);text-shadow:0 1px 16px rgba(0,0,0,.35)}
+.btn-mobile{display:none;color:currentColor;padding:0}
+.btn-mobile .btn-inner{gap:var(--s-0625)}
+.btn-mobile .btn-icon{opacity:1;position:relative;left:auto;transform:none}
+
+/* ============================================================
+   9. ЦИТАТЫ
+   ============================================================ */
+.quote-credits_wrap{display:flex;flex-direction:column;gap:.25rem;margin-top:.5rem}
+
+/* ============================================================
+   10. ГОРИЗОНТАЛЬНЫЙ СКРОЛЛ
+   ============================================================ */
+.horizontal-scroll_outer{position:relative}
+.horizontal-scroll_outer-final-image{position:absolute;top:0;left:0;width:100vw;height:100svh;z-index:0}
+.horizontal-scroll_outer-image{width:100%;height:100%}
+.horizontal-scroll{position:relative;z-index:3;width:100%;overflow:visible}
+.horizontal-scroll_wrapper{position:sticky;top:0;width:100%;height:100svh;color:#fff;overflow:visible}
+.horizontal-scroll_container{display:flex;width:fit-content;height:100svh;overflow:hidden;will-change:transform;transform:translateZ(0)}
+.horizontal-scroll_panel{position:relative;flex-shrink:0;display:flex;justify-content:center;align-items:center;height:100svh}
+.horizontal-scroll_panel:first-child{width:100vw;padding:0}
+.horizontal-scroll_panel:not(:first-child){width:calc(50vw + var(--s-125r));padding-right:var(--s-125r);z-index:1}
+.horizontal-scroll_panel--full,.horizontal-scroll_panel.horizontal-scroll_panel--full{width:100vw;padding-right:0}
+.horizontal-scroll_image-wrap{position:absolute;inset:0;z-index:1;will-change:transform;transform:translateZ(0)}
+.horizontal-scroll_clip-wrap{position:absolute;inset:0;z-index:2;will-change:transform,clip-path;transform:translateZ(0)}
+.horizontal-scroll_clip-wrap .horizontal-scroll_image-wrap{z-index:auto}
+.horizontal-scroll_image{width:100%;height:100%;object-fit:cover;object-position:center;transform:translateZ(0)}
+.horizontal-scroll_overlay{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+.horizontal-scroll_content{position:relative;width:100%;height:100%}
+.horizontal-scroll_content .container-large{height:100%}
+.horizontal-scroll_title-wrap{position:absolute;inset:0;display:flex;justify-content:center;align-items:center}
+.horizontal-scroll_title{font:500 var(--s-875)/1 var(--font-display);text-transform:uppercase;text-align:center}
+.panel-1_text-wrap{position:relative;top:100%}
+.horizontal-scroll_camp-card{position:relative;display:grid;width:50vw;aspect-ratio:4/3;padding:var(--s-125);color:inherit;cursor:pointer;border-radius:var(--r-0375);background:rgba(31,42,68,.05);overflow:hidden}
+.horizontal-scroll_camp-card_inner{position:relative;width:100%;height:100%;padding:var(--s-25);display:flex;flex-direction:column;justify-content:space-between;border-radius:var(--r-0125);overflow:hidden}
+.horizontal-scroll_camp-image{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.horizontal-scroll_camp-card .image-with-overlay_img,.horizontal-scroll_camp-card .image-overlay{transition:var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.horizontal-scroll_camp-card:hover .image-overlay{background:rgba(0,0,0,.44)!important}}
+.horizontal-scroll_camp-content{position:relative;z-index:2;height:100%;color:#fff;text-shadow:0 1px 20px rgba(0,0,0,.35);text-align:center;display:flex;flex-direction:column;row-gap:var(--s-2)}
+.horizontal-scroll_camp-excerpt{font-size:var(--s-0875);line-height:var(--lh-140);max-width:80%;margin-inline:auto;font-weight:500}
+.horizontal-scroll_camp-coordinates{margin-top:auto;font:500 var(--s-0875)/var(--lh-140) var(--font-condensed);text-transform:uppercase}
+.quote-component{display:flex;align-items:center;text-align:center}
+.quote-logo_wrap{width:var(--s-7375);margin-bottom:var(--s-175);color:#fff}
+.horizontal-scroll_panel--full{color:#fff;text-shadow:0 1px 24px rgba(0,0,0,.35)}
+.ct-antartica_section{position:relative;z-index:3;width:100%;padding-top:var(--s-875);color:#fff;mix-blend-mode:soft-light;display:flex;justify-content:center;align-items:center}
+.title-fade{font:400 var(--s-20)/.9 var(--font-condensed);white-space:nowrap;text-transform:uppercase;text-align:center}
+.title-fade_wrap--mobile{display:none}
+.mist-divider_wrap{position:relative;z-index:3;width:100%;height:100svh}
+
+/* ============================================================
+   11. ГЛОБУС / МАРШРУТ
+   ============================================================ */
+.travel-globe{position:relative;z-index:3;width:100%;background:#fff}
+.travel-globe_head{position:relative;z-index:1;background:#fff;color:var(--ink);overflow:clip;padding-bottom:var(--s-425)}
+.travel-globe_head-col_center{display:flex;flex-flow:column;align-items:center;text-align:center;row-gap:var(--s-125)}
+.travel-globe_head-col_right{text-align:right}
+.h-line_el{position:relative;width:100%;height:.5px;border-top:.5px dashed var(--ink);margin-bottom:var(--s-0625);opacity:.5}
+.h-line_el::before,.h-line_el::after{content:"";position:absolute;top:50%;width:3px;height:3px;border-radius:50%;background:var(--ink);transform:translateY(-50%)}
+.h-line_el::before{left:0}.h-line_el::after{right:0}
+.travel-globe_component{position:relative;background:var(--dark-bg);color:#fff}
+.travel-globe_inner{position:relative}
+.travel-globe_component-img{display:block;width:100%;height:auto;aspect-ratio:1440/1721}
+.map-svg .land{fill:url(#landGrad);stroke:rgba(255,255,255,.2);stroke-width:.6}
+.map-svg .land-hi{fill:url(#landHi);stroke:rgba(255,255,255,.35);stroke-width:.7}
+.map-svg .grat{fill:none;stroke:rgba(255,255,255,.07);stroke-width:.6;stroke-dasharray:2 4}
+.map-svg .route-base{fill:none;stroke:#fff;stroke-width:1;opacity:.85}
+.map-svg .route-flown{fill:none;stroke:var(--accent-soft);stroke-width:1.6;stroke-linecap:round}
+.map-svg .pt-start{fill:var(--accent-soft)}
+.map-svg .pt-end{fill:#fff}
+.map-svg .ind-core{fill:var(--accent-soft)}
+.map-svg .ind-ping{fill:none;stroke:var(--accent-soft);stroke-width:1;opacity:0;transform-box:fill-box;transform-origin:center;animation:pulsed 2s ease-out infinite}
+.map-svg .ind-ping:nth-of-type(2){animation-delay:.2s}.map-svg .ind-ping:nth-of-type(3){animation-delay:.4s}
+@keyframes pulsed{0%{opacity:1;transform:scale(1)}59.9%{opacity:0;transform:scale(5)}60%,to{opacity:0;transform:scale(1)}}
+.map-location_item{position:absolute;display:flex;flex-direction:column;align-items:center;text-align:center;row-gap:var(--s-0625);transform:translate(-50%,-50%);pointer-events:none}
+.map-location_item.is-white{color:#fff}
+.globe-sticky_outer{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.globe-sticky_col{pointer-events:auto}
+.globe-sticky_wrap{width:100%;height:100svh;padding:var(--s-25);display:flex;align-items:flex-end}
+.globe-sticky_card{position:relative;border-radius:var(--r-0375);overflow:clip}
+.globe-sticky_content-wrap{position:relative;display:flex;flex-direction:column;row-gap:var(--s-15);padding:var(--s-2) var(--s-125);background:rgba(31,42,68,.2);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.globe-sticky_info-item{display:flex;flex-direction:column;row-gap:var(--s-03125)}
+.globe-video_wrap{position:relative;display:flex;flex-direction:column;row-gap:var(--s-15);padding:var(--s-0625);background:rgba(31,42,68,.2);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.globe-video_wrap .btn-image{aspect-ratio:16/9;height:auto}
+.globe-video_wrap .btn-image .btn-content-wrapper{width:50%;transition:width .3s ease-in-out}
+@media (hover:hover) and (pointer:fine){.globe-video_wrap .btn-image:hover{border-radius:var(--r-0125)}.globe-video_wrap .btn-image:hover .btn-content-wrapper{width:46.5%}}
+
+.basic-banner{position:relative;z-index:4;width:100%;min-height:100svh;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.basic-banner_bg{position:absolute;inset:0;z-index:0}
+.basic-banner_bg img{width:100%;height:100%;object-fit:cover}
+.basic-banner_overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(9,11,16,.25),rgba(9,11,16,.38))}
+.basic-banner_content{position:relative;z-index:2;width:100%;color:#fff;text-align:center}
+.basic-banner_inner{display:flex;flex-direction:column;align-items:center}
+.basic-banner .h3{text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.basic-banner .liquid-glass_wrap{margin-top:0}
+.btn-standard.wa{width:auto;padding-inline:var(--s-25);}
+
+/* ============================================================
+   12. FLYOUT «Как это работает» + «Заявка»
+   ============================================================ */
+.flyout_container{position:fixed;inset:0;width:100vw;height:100svh;z-index:10000;pointer-events:none;visibility:hidden}
+.flyout_container.is-ready{visibility:visible}
+.flyout_container.is-active{pointer-events:auto}
+.flyout-overlay{position:absolute;inset:0;width:100%;height:100%;background:rgba(31,42,68,.5);opacity:0;cursor:pointer;-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px)}
+.flyout_component{position:absolute;top:0;right:0;width:50%;height:100%;pointer-events:none;will-change:transform}
+.flyout_container.is-active .flyout_component{pointer-events:auto}
+.flyout-button-wrap{position:absolute;z-index:1;pointer-events:auto}
+.flyout-visible-wrap{transition:var(--ease-wd);transform:translateY(100%)}
+.flyout-visible-wrap.is-visible{transform:translateY(0)}
+.btn-popup-open{background:var(--accent);color:#fff;border-radius:var(--r-sm) var(--r-sm) 0 0;height:var(--s-375);padding:0 var(--s-3);width:auto;border:none;transition:var(--ease-wd);display:flex;align-items:center}
+.btn-popup-open .btn-inner{gap:var(--s-0875)}
+.btn-popup-open .switch-labels{display:grid}
+.btn-popup-open .icon-span{display:flex;align-items:center;gap:var(--s-0625);grid-area:1/1;opacity:0;transition:var(--ease-wd)}
+.btn-popup-open .icon-span.active{opacity:1}
+.btn-popup-open .close-label .icon{transform:rotate(45deg)}
+@media (min-width:768px){
+  .flyout-button-wrap{transform-origin:100%;top:50%;right:100%;transform:rotate(-90deg) translate(calc(50% + 1.75rem)) translateY(-50%)}
+  @media (hover:hover) and (pointer:fine){.btn-popup-open:hover{padding:0 5rem}}
+}
+.flyout_popup{position:relative;z-index:2;width:100%;height:100%;background:#fff;color:var(--ink)}
+.flyout_layout{width:100%;height:100%;padding:var(--s-625,6.25rem) var(--s-78125,7.8125rem);display:flex;flex-direction:column;overflow-x:hidden;overflow-y:auto;border-radius:var(--r-sm)}
+.flyout_header{margin-bottom:var(--s-5);display:flex;flex-direction:column;align-items:flex-start;gap:var(--s-03125);max-width:80%}
+.t-modal-header{font:500 var(--s-2)/var(--lh-120) var(--font-display);text-transform:uppercase}
+.global-flyout_flex{display:flex;flex-direction:column;row-gap:5px}
+.global-flyout_content-item{padding:var(--s-1875);border-radius:var(--s-03125);background:#f5f5f5}
+.global-richtext{display:flex;flex-flow:column;align-items:flex-start;row-gap:var(--s-125);position:relative}
+.global-richtext h3{font:italic 500 var(--s-1125)/var(--lh-120) var(--font-display)}
+.global-richtext p{font-size:var(--s-0875);font-weight:500;line-height:var(--lh-150)}
+.global-richtext a,a.rich-btn{color:var(--accent);text-decoration:underline}
+.faq-block{margin-top:var(--s-5)}
+.faq-item{border-bottom:.5px solid rgba(31,42,68,.2)}
+.faq-item button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1rem;text-align:left;padding:var(--s-125) 0;font:500 var(--s-1)/1.3 var(--font-sans)}
+.faq-item .plus{width:.75rem;height:.75rem;flex:none;position:relative;transition:transform .3s}
+.faq-item .plus::before,.faq-item .plus::after{content:"";position:absolute;background:currentColor;top:50%;left:0;width:100%;height:1px}
+.faq-item .plus::after{transform:rotate(90deg)}
+.faq-item.is-open .plus{transform:rotate(45deg)}
+.faq-item .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s cubic-bezier(.5,1,.89,1)}
+.faq-item.is-open .faq-a{grid-template-rows:1fr}
+.faq-item .faq-a>div{overflow:hidden}
+.faq-item .faq-a p{padding-bottom:var(--s-125);font-size:var(--s-0875);line-height:1.5;color:rgba(31,42,68,.85)}
+
+/* форма заявки */
+.enq-form{display:flex;flex-direction:column;gap:0}
+.enq-field{position:relative;padding:var(--s-1) 0;border-bottom:.5px solid rgba(31,42,68,.25)}
+.enq-field label{display:block;font:italic 500 var(--s-1)/1.2 var(--font-display);opacity:.7;margin-bottom:.25rem}
+.enq-field input,.enq-field select,.enq-field textarea{width:100%;font:500 var(--s-1)/1.4 var(--font-sans);color:var(--ink);background:transparent;border:0;outline:none;padding:.25rem 0;border-radius:0;appearance:none;-webkit-appearance:none;resize:none}
+.enq-field:focus-within{border-bottom-color:var(--accent)}
+.enq-field input::placeholder,.enq-field textarea::placeholder{color:rgba(31,42,68,.35)}
+.enq-row{display:grid;grid-template-columns:1fr 1fr;column-gap:1.5rem}
+.enq-actions{display:flex;flex-direction:column;gap:var(--s-0625);margin-top:var(--s-15)}
+.enq-actions .btn-large{height:var(--s-5)}
+.enq-actions .btn-large.hover-orange{background:var(--accent);color:#fff}
+.enq-actions .btn-large.hover-orange:hover{background:var(--ink)}
+.enq-note{font-size:var(--s-075);opacity:.6;margin-top:var(--s-1);line-height:1.5}
+.enq-error{color:#b3261e;font-size:var(--s-0875);margin-top:.5rem;min-height:1.2em}
+
+/* ============================================================
+   13. ФУТЕР
+   ============================================================ */
+.footer-component{position:relative;background:var(--mushroom)}
+.footer{position:relative;z-index:3;min-height:100svh;display:flex;flex-flow:column;justify-content:space-between;row-gap:var(--s-125r);padding-block:10px}
+.footer-layout{padding-top:var(--s-6875)}
+.footer-col{padding-block:var(--s-0625)}
+.footer-col_inner_col{padding-inline:var(--s-0625)}
+.footer-menu_layout{display:flex;flex-flow:column;row-gap:var(--s-1)}
+.footer-menu_item{display:flex;flex-flow:column;row-gap:var(--s-05)}
+.footer-menu_item ul{display:flex;flex-flow:column;row-gap:.125rem;color:var(--charcoal)}
+.footer-brand-mark{display:flex;justify-content:center;align-items:center;width:auto;margin:var(--s-125) 0 0 var(--s-375)}
+.footer-link{transition:var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.footer-link:hover{color:var(--ink);opacity:1}}
+.footer-cta_layout{display:flex;flex-flow:column;row-gap:var(--s-0625);width:calc(100% - var(--s-0625))}
+.footer-cta_grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s-0625)}
+.footer-bottom_layout{display:flex;flex-direction:column;row-gap:var(--s-125)}
+.footer-bottom_logo{width:100%;text-align:center;font:400 30rem/.8 var(--font-condensed);letter-spacing:.02em;color:var(--ink);text-transform:uppercase;white-space:nowrap;overflow:hidden;user-select:none}
+.footer-info_layout{position:relative;width:100%;max-width:calc(100% - var(--sp-2)*2);margin:auto;padding:var(--s-125) var(--s-0625);color:var(--charcoal);background:var(--mushroom);align-items:center}
+.footer-info_layout::before,.footer-info_layout::after{content:"";position:absolute;left:0;width:100%;height:.5px;background:#fff;opacity:.1;mix-blend-mode:difference}
+.footer-info_layout::before{top:0}.footer-info_layout::after{bottom:0}
+.footer-info_left{display:flex;column-gap:var(--s-125);align-items:center;text-align:left}
+.footer-info_right{display:flex;column-gap:var(--s-125);justify-content:flex-end;align-items:center;text-align:right}
+.footer-quote{font:italic 500 var(--s-125)/var(--lh-120) var(--font-display)}
+.footer-author{font:600 var(--s-0625)/var(--lh-120) var(--font-sans);text-transform:uppercase;letter-spacing:.1em;opacity:.5}
+.footer-info_middle{display:flex;flex-direction:column;align-items:center;row-gap:var(--s-03125);text-align:center;color:var(--ink)}
+
+/* ============================================================
+   14. КУРСОР, COOKIE, ПРЕЛОАДЕР
+   ============================================================ */
+.custom-cursor{position:fixed;top:0;left:0;z-index:10001;pointer-events:none;display:flex;justify-content:center;align-items:center}
+.custom-cursor_line-vertical{position:absolute;left:50%;width:.03125rem;height:0;background:var(--accent);opacity:0;transform:translate(-50%)}
+.custom-cursor_line-horizontal{position:absolute;top:50%;width:0;height:.03125rem;background:var(--accent);opacity:0;transform:translateY(-50%)}
+.custom-cursor_dot{width:.25rem;height:.25rem;background:var(--accent)}
+.custom-cursor_label{position:absolute;top:-1.25rem;right:.5rem;color:#fff;text-align:right;font:500 .875rem/1.2 var(--font-sans);white-space:nowrap;opacity:0;pointer-events:none;border-radius:var(--r-0125);overflow:hidden;padding:.3125rem var(--s-1);background:rgba(31,42,68,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+body:has(.btn:hover) .custom-cursor{opacity:0}
+@media (pointer:coarse),(hover:none){.custom-cursor{display:none}}
+
+.cookie-banner{position:fixed;bottom:0;right:0;z-index:999999;max-width:580px;margin:1rem;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;gap:24px;border-radius:var(--r-sm);background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);overflow:clip;transform:translateY(calc(100% + 2rem));transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.cookie-banner.visible{transform:translateY(0)}
+.cookie-banner p{color:var(--ink);font-size:14px;line-height:1.4}
+.cookie-banner a{text-decoration:underline}
+.cookie-banner .actions{display:flex;flex-wrap:wrap;gap:18px;flex-shrink:0}
+.consent-btn{height:2.5rem;padding:10px 1rem;font:500 14px var(--font-sans);color:var(--ink);transition:var(--ease-out)}
+.consent-btn:hover{color:var(--accent)}
+
+.preloader{position:fixed;inset:0;z-index:100000;background:var(--mushroom);color:var(--charcoal);display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 1.5rem;transition:transform 1s cubic-bezier(.76,0,.24,1)}
+.preloader.is-done{transform:translateY(-100%)}
+.preloader-text{text-align:left;font:italic 600 1.5rem var(--font-display);margin:0 1rem .5rem;color:var(--charcoal)}
+.preloader-bar{background:#a4a29c;border-radius:2px;width:calc(100% - 2rem);margin-inline:1rem;height:1px;overflow:hidden}
+.preloader-fill{background:var(--charcoal);height:100%;width:0%}
+.preloader-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem 1.5rem 0}
+.preloader-bottom .text-logo{font:700 .75rem var(--font-sans);letter-spacing:.06em}
+.preloader-bottom .text-quote{font:italic 600 .875rem var(--font-display)}
+
+/* ============================================================
+   15. МОБИЛЬНАЯ ВЕРСИЯ
+   ============================================================ */
+@media (max-width:767px){
+  :root{--grid-cols:8}
+  .offset-1,.offset-2{grid-column-start:2}.offset-3{grid-column-start:4}.offset-4{grid-column-start:2}.offset-8{grid-column-start:2}.offset-10{grid-column-start:11}
+  .col-2{grid-column-end:span 6}
+  .grid-line_col{display:none}
+  .h3{font-size:var(--s-1625)}
+  .section-title{font-size:var(--s-2)}
+  .text-indent-4col{text-indent:calc(100%/var(--grid-cols)*2)}
+  .u-grid.no-gap{column-gap:var(--gutter-x);row-gap:var(--gutter-y)}
+  .t-body_quote{font-size:var(--s-15)}
+  .v-flex_left-med{row-gap:var(--s-225)}
+  section.padding-top-large-bottom-medium{padding-top:var(--s-125r);padding-bottom:var(--s-3)}
+  section.padding-large{padding-block:var(--s-10)}
+  .home-intro_col{grid-column:2/span 7}
+  .nav-layout{display:none}
+  body[data-menu-open=true] .nav-layout_mobile{visibility:hidden}
+  .nav-layout_mobile{display:flex;width:100%;height:var(--s-3125);padding:var(--s-03125);border-radius:var(--r-0125);justify-content:space-between;align-items:stretch;position:relative;overflow:clip;background:rgba(31,42,68,.2);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+  body[data-nav-theme=dark] .nav-layout_mobile{background:rgba(31,42,68,.06)}
+  nav .nav-layout_mobile .btn,nav .nav-layout_mobile a.nav-btn{pointer-events:auto;color:inherit;width:var(--s-5);display:flex;justify-content:center;align-items:center;height:100%;border:0}
+  nav .nav-layout_mobile .menu-enquire{background:var(--accent);color:#fff;border-radius:var(--r-0125)}
+  .nav-layout_mobile .nav-col{display:flex;align-items:center;justify-content:center}
+  .nav-layout_mobile .logo-word{font-size:1.15rem}
+  .nav-layout_mobile .logo-mark{width:.85rem;height:.85rem}
+  .nav-layout_mobile .nav-logo-link{gap:.15rem}
+  .hero-banner_title{font-size:var(--s-5)}
+  .hero-banner_layout{flex-direction:column;justify-content:flex-end;gap:20svh;height:100%;margin-bottom:1.5rem;display:flex}
+  .hero-banner_col.left-col{padding-inline:calc(var(--s-375) - 10px);text-align:center}
+  .hero-banner_col .t-title-italic{font-size:var(--s-125)}
+  .hero-banner_col.offset-10{width:100%;padding-inline:calc(var(--s-375) - 10px)}
+  .hero-banner_contain{height:100%}
+  .btn-image-hover{width:100%}
+  .btn-image,.btn-large{height:var(--s-625,6.25rem);min-height:var(--s-625,6.25rem)}
+  .btn-image .btn-content-wrapper{column-gap:var(--s-125);width:auto}
+  .btn-mobile,.btn-mobile .btn-icon{display:flex}
+  .btn{transition:none}
+  .card-flick_grid{gap:var(--s-0625);flex-direction:column}
+  .card-flick_item{width:100%;border-radius:var(--r-sm);height:85svh}
+  .card-flick_content{opacity:1;width:100%;padding:1.25rem 1.25rem var(--s-1875)}
+  .card-flick_overlay{display:none}
+  .card-flick_meta{row-gap:var(--sp-2);flex-wrap:wrap}
+  .card-flick_title{font-size:var(--s-2)}
+  .card-flick_image img{min-width:0}
+  .tall-parallax-banner .container-large{padding-top:var(--s-5)}
+  .horizontal-scroll_title{font-size:var(--s-375)}
+  .horizontal-scroll_content .layout-col.col-2{grid-column:2/span 6}
+  .horizontal-scroll_panel:not(:first-child){z-index:1;width:100vw;padding-right:0;padding-inline:var(--s-125)}
+  .horizontal-scroll_camp-card{aspect-ratio:4/5;width:100%}
+  .horizontal-scroll_panel .layout-col.col-4.offset-4{grid-column:1/10}
+  .horizontal-scroll_camp-content{row-gap:var(--s-125)}
+  .horizontal-scroll_camp-excerpt{max-width:100%}
+  .horizontal-scroll_camp-card_inner{padding:var(--s-25) var(--s-125)}
+  .title-fade{font-size:var(--s-125r);text-align:center}
+  .title-fade_wrap--desktop{display:none}.title-fade_wrap--mobile{display:block}
+  .ct-antartica_content .u-grid{justify-content:center;display:flex}
+  .travel-globe_head-layout{row-gap:var(--s-5);position:relative}
+  .travel-globe_head-col_left{text-align:left;grid-area:1/1/auto/5}
+  .travel-globe_head-col_right{text-align:right;grid-area:1/5/auto/9}
+  .travel-globe_head-col_center{grid-area:2/1/auto/9}
+  .travel-globe_head{padding-bottom:var(--s-5)}
+  .globe-sticky_outer{position:relative;height:auto;top:0}
+  .globe-sticky_wrap{height:auto;padding:var(--s-0625);position:sticky;top:0}
+  .globe-sticky_layout.u-grid{gap:var(--s-0625);flex-direction:column-reverse;display:flex}
+  .globe-sticky_info-item .h3{font-size:var(--s-2)}
+  .globe-video_wrap .btn-image .btn-content-wrapper{column-gap:var(--s-125);width:auto}
+  .map-location_item .layout-title_md,.map-location_item .t-title-italic{font-size:var(--s-0625)}
+  .basic-banner_layout{padding-inline:var(--s-3);display:flex;width:100%}
+  .flyout-button-wrap{display:none}
+  .flyout_component{width:100%}
+  .flyout_layout{padding:var(--s-25)}
+  .flyout_header{padding-top:var(--s-3)}
+  .menu-wrap{padding:0}
+  .menu-contain{padding:0}
+  .menu-el{clip-path:none;padding:0;transform:translateY(-100%);transition:transform .6s cubic-bezier(.76,0,.24,1)}
+  .menu-component.open .menu-el{transform:none}
+  .menu-inner{margin-top:0}
+  .mobile-menu_top{display:flex;height:var(--s-5);padding:var(--s-0625) var(--s-125);width:100%;flex-shrink:0}
+  .mobile-menu_close{display:flex;width:10rem;height:100%;justify-content:center;align-items:center;background:var(--light-grey);border-radius:var(--r-0125)}
+  .menu-col.is-desktop{display:none}
+  .footer-layout.u-grid{flex-direction:column;display:flex}
+  .footer-brand-mark{margin:var(--s-125) 0 0}
+  .footer-col_inner.u-grid{display:flex;flex-direction:column;align-items:flex-start;row-gap:var(--s-1875);padding-left:var(--s-3)}
+  .footer-col{padding-bottom:var(--s-1);padding-top:var(--s-25)}
+  .footer-cta_layout{width:100%}
+  .footer-bottom_logo{font-size:12rem}
+  .footer-info_contain.u-grid{display:flex;flex-direction:column;row-gap:1.5rem;align-items:center;text-align:center}
+  .footer-info_left,.footer-info_right{justify-content:center;flex-wrap:wrap;text-align:center}
+  .cookie-banner{width:calc(100% - 30px);max-width:unset;flex-direction:column;gap:8px;margin:1rem;padding:1rem}
+  .cookie-banner p{text-align:center}
+  .enq-row{grid-template-columns:1fr}
+  .preloader-bottom .text-quote{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero-banner_bg img{animation:none!important}
+  [data-reveal]{animation-duration:.01s!important}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ПРЕЛОАДЕР -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <p class="preloader-text">Лаббайк, Аллахумма лаббайк</p>
+  <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+  <div class="preloader-bottom">
+    <span class="text-logo">САКИНА</span>
+    <span class="text-quote">Хадж и умра без суеты</span>
+    <span class="text-logo" id="preloaderNum">0%</span>
+  </div>
+</div>
+
+<div class="grid-overlay" aria-hidden="true">
+  <div class="grid-line grid-line-1"></div><div class="grid-line grid-line-5"></div><div class="grid-line grid-line-9"></div>
+  <div class="grid-overlay_container container-small"><div class="grid-overlay_small-wrap"><div class="grid-line_inner grid-line-2"></div><div class="grid-line_inner grid-line-8"></div></div></div>
+  <div class="grid-overlay_container container-large"><div class="grid-overlay_grid u-grid">
+    <div class="grid-line_col col-2"><div class="grid-line_inner grid-line-3"></div></div><div class="grid-line_col col-2"></div>
+    <div class="grid-line_col col-2"><div class="grid-line_inner grid-line-4"></div></div><div class="grid-line_col col-2"><div class="grid-line_inner grid-line-6"></div></div>
+    <div class="grid-line_col col-2"></div><div class="grid-line_col col-2"><div class="grid-line_inner grid-line-7"></div></div>
+  </div></div>
+</div>
+
+<!-- НАВИГАЦИЯ -->
+<nav aria-label="Основная навигация">
+  <div class="nav-contain container">
+    <div class="nav-layout u-grid">
+      <div class="nav-col col-4">
+        <ul class="nav-ul nav-left">
+          <li><div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div><button class="btn btn-tab" type="button" data-menu="programs"><div class="btn-inner"><span class="btn-text">Программы</span></div></button></li>
+          <li><div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div><button class="btn btn-tab" type="button" data-menu="places"><div class="btn-inner"><span class="btn-text">Места</span></div></button></li>
+          <li><div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div><button class="btn btn-tab" type="button" data-menu="about"><div class="btn-inner"><span class="btn-text">О нас</span></div></button></li>
+        </ul>
+      </div>
+      <div class="nav-col col-4">
+        <a href="#top" class="nav-logo-link" aria-label="Сакина — на главную">
+          <svg class="logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="4.2" y="4.2" width="15.6" height="15.6"/><rect x="4.2" y="4.2" width="15.6" height="15.6" transform="rotate(45 12 12)"/></svg>
+          <span class="logo-word">Сакина</span>
+        </a>
+      </div>
+      <div class="nav-col col-4">
+        <ul class="nav-ul nav-right">
+          <li><div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div><a class="btn btn-cta" href="#programs" data-scroll><div class="btn-inner"><span class="btn-text">Цены</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M5.5 0v11M0 5.5h11" stroke="currentColor" stroke-width=".8"/></svg></div></div></div></a></li>
+          <li><div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div><button class="btn btn-cta" type="button" data-enquire><div class="btn-inner"><span class="btn-text">Заявка</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M5.5 0v11M0 5.5h11" stroke="currentColor" stroke-width=".8"/></svg></div></div></div></button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-layout_mobile">
+      <div class="nav-col"><button class="btn nav-btn menu-toggle" type="button" data-menu="programs"><div class="btn-inner"><span class="btn-text">Меню</span></div></button></div>
+      <div class="nav-col"><a href="#top" class="nav-logo-link" aria-label="Сакина — на главную"><svg class="logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="4.2" y="4.2" width="15.6" height="15.6"/><rect x="4.2" y="4.2" width="15.6" height="15.6" transform="rotate(45 12 12)"/></svg><span class="logo-word">Сакина</span></a></div>
+      <div class="nav-col"><button class="btn nav-btn menu-enquire" type="button" data-enquire><div class="btn-inner"><span class="btn-text">Заявка</span></div></button></div>
+    </div>
+  </div>
+
+  <div class="menu-component" id="menu" aria-hidden="true">
+    <div class="menu-bg" data-menu-close></div>
+    <div class="menu-wrap">
+      <div class="menu-contain container-large" style="max-width:100%">
+        <div class="menu-layout u-grid">
+          <div class="menu-col col-4">
+            <div class="menu-el" role="menu" aria-label="Меню">
+              <div class="mobile-menu_top"><button class="mobile-menu_close btn-text" type="button" data-menu-close>Закрыть</button></div>
+              <div class="menu-inner">
+                <a class="nav-link" href="#top" data-menu-link style="font:italic 500 var(--s-1375)/1.2 var(--font-display);padding:var(--s-125) var(--sp-4) 0">Главная</a>
+                <div class="menu-dropdown_wrap" id="menuAcc">
+                  <div class="menu-dropdown_item" data-acc="programs"><button class="menu-dropdown_title" type="button">Программы</button><div class="menu-dropdown_content"><div class="menu-dropdown_inner"><ul>
+                    <li><a href="#programs" data-menu-link data-img="t1">Рамадан у Каабы</a></li>
+                    <li><a href="#programs" data-menu-link data-img="t2">Хадж</a></li>
+                    <li><a href="#programs" data-menu-link data-img="t3">Мекка и Медина</a></li>
+                    <li><a href="#programs" data-menu-link data-img="t4">Долгая умра</a></li>
+                    <li><a href="#programs" data-menu-link data-img="t5">Умра за 5 дней</a></li>
+                  </ul></div></div></div>
+                  <div class="menu-dropdown_item" data-acc="places"><button class="menu-dropdown_title" type="button">Места</button><div class="menu-dropdown_content"><div class="menu-dropdown_inner"><ul>
+                    <li><a href="#places" data-menu-link data-img="c1">Мекка</a></li>
+                    <li><a href="#places" data-menu-link data-img="c2">Медина</a></li>
+                    <li><a href="#places" data-menu-link data-img="c3">Арафат</a></li>
+                    <li><a href="#route" data-menu-link data-img="map">Дорога из Москвы</a></li>
+                  </ul></div></div></div>
+                  <div class="menu-dropdown_item" data-acc="about"><button class="menu-dropdown_title" type="button">О нас</button><div class="menu-dropdown_content"><div class="menu-dropdown_inner"><ul>
+                    <li><button type="button" data-menu-link data-flyout="how" data-img="p1">Как это работает</button></li>
+                    <li><button type="button" data-menu-link data-flyout="faq" data-img="p2">Вопросы и ответы</button></li>
+                    <li><a href="#contact" data-menu-link data-img="fin">Связаться</a></li>
+                  </ul></div></div></div>
+                </div>
+              </div>
+              <div class="menu-footer" style="padding:0 var(--s-0625)">
+                <button class="btn btn-large hover-orange" type="button" data-enquire data-menu-link><div class="btn-inner"><span class="btn-text">Оставить заявку</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M1 1h9v9M10 1 1 10" stroke="currentColor" stroke-width=".9"/></svg></div></div></div></button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col col-4 is-desktop">
+            <div class="menu-img_wrap" id="menuImgs">
+              <div class="menu-img_item is-on" data-k="t1"><img src="https://images.unsplash.com/photo-1771170983433-1576bc4a7eec?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="t2"><img src="https://images.unsplash.com/photo-1713302752681-0b14c1034707?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="t3"><img src="https://images.unsplash.com/photo-1602733458155-647c07d32ef6?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="t4"><img src="https://images.unsplash.com/photo-1558261537-8fcffa3479c7?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="t5"><img src="https://images.unsplash.com/photo-1677835238946-20fc43ab0533?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="c1"><img src="https://images.unsplash.com/photo-1627728734379-a5f8c099763e?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="c2"><img src="https://images.unsplash.com/photo-1644585185180-7b51c7f302dd?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="c3"><img src="https://images.unsplash.com/photo-1650446647974-451d05d2136d?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="map"><img src="https://images.unsplash.com/photo-1760530098172-d28d2e05b659?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="p1"><img src="https://images.unsplash.com/photo-1710695198971-3abdf7fcc82e?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="p2"><img src="https://images.unsplash.com/photo-1677835214504-9648944c3e50?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+              <div class="menu-img_item" data-k="fin"><img src="https://images.unsplash.com/photo-1649929938487-f1f52b2678a4?auto=format&fit=crop&w=1000&q=70" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="page-main" id="top">
+<div class="page-content">
+
+  <!-- ГЕРОЙ -->
+  <div class="hero-banner">
+    <div class="mist-transition"><div class="mist-transition_image-container" id="heroMist"><img class="mist-transition_image" src="assets/cloud-gradient.webp" alt="" width="1920" height="1080"></div></div>
+    <div class="hero-banner_wrapper" id="heroWrap">
+      <div class="hero-banner_bg">
+        <img src="https://images.unsplash.com/photo-1713239060784-e6ed820a0715?auto=format&fit=crop&w=2400&q=80" alt="Рассвет над Заповедной мечетью в Мекке: Кааба в арке, золотое солнце над минаретами" fetchpriority="high">
+        <div class="hero-banner_overlay"></div>
+      </div>
+      <div class="hero-banner_content" data-reveal>
+        <div class="hero-banner_contain container-large">
+          <div class="hero-banner_layout u-grid" data-scroll-speed="-60svh">
+            <div class="hero-banner_col col-3 left-col"><p class="t-title-italic t-balance">Путь к Священным местам — спокойно, бережно и без суеты</p></div>
+            <div class="hero-banner_col col-3 offset-10">
+              <button class="btn btn-image-hover" type="button" data-scroll-to="#programs">
+                <div class="btn-preview-image"><img src="https://images.unsplash.com/photo-1667454496584-9838026037af?auto=format&fit=crop&w=700&q=70" alt=""></div>
+                <div class="btn-content-wrapper"><span class="btn-text">Подобрать программу</span><div class="btn-icon"><div class="icon"><svg viewBox="0 0 9 11" fill="none"><path d="M.5 1v9l8-4.5z" fill="currentColor"/></svg></div></div></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-banner_title-contain container">
+          <div class="hero-banner_title-wrapper u-grid" data-scroll-speed="-60svh">
+            <div class="hero-banner_title-inner col-10 offset-1"><h1 class="hero-banner_title" id="heroTitle"><span id="heroTitleText" style="display:inline-block">Хадж и умра</span></h1></div>
+          </div>
+        </div>
+      </div>
+      <div class="clouds-overlay_wrap" data-cloud="-80"><img src="assets/cloud-1.webp" alt="" width="1920" height="720"></div>
+      <div class="clouds-overlay_wrap" data-cloud="-10"><img src="assets/cloud-2.webp" alt="" width="1920" height="1200"></div>
+    </div>
+  </div>
+
+  <!-- ВСТУПЛЕНИЕ -->
+  <div class="home-section">
+    <section class="padding-top-large-bottom-medium m-pb-625 bg-white" data-nav-theme="dark">
+      <div class="container-large">
+        <div class="home-intro_layout u-grid no-gap">
+          <div class="home-intro_col col-6 offset-4">
+            <div class="v-flex_left-med">
+              <div class="home-intro_quote u-relative">
+                <p class="t-title-italic">Путь сердца</p>
+                <div class="scribble-el home-intro_svg"><svg viewBox="0 0 191 62" fill="none" aria-hidden="true"><path class="scribble" d="M4 46C40 16 120 6 178 24c16 5 6 18-38 22C92 50 40 46 6 54" stroke="#BABABA" stroke-width=".6" stroke-linecap="round"/></svg></div>
+              </div>
+              <div class="text-scroll-fade"><h2 class="h3 text-indent-4col">Тихий, светлый и неизменно трогающий — путь к Каабе и Пророческой мечети остаётся одним из самых значимых событий в жизни мусульманина.</h2></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- НАШ СЕЗОН -->
+  <div class="wd-mnt">
+    <section class="tall-parallax-banner" data-nav-theme="dark">
+      <div>
+        <div class="tall-parallax-banner_inner">
+          <img class="img-fill" src="https://images.unsplash.com/photo-1760530098172-d28d2e05b659?auto=format&fit=crop&w=2400&q=80" alt="Пески и дюны на рассвете — дорога пилигрима" loading="lazy">
+          <div class="container-large"><div class="u-grid no-gap">
+            <div class="layout-col col-2 offset-2" data-scroll-scrub>
+              <div class="v-flex_left-small">
+                <p class="layout-title">Наш сезон</p>
+                <p class="t-body">Умру мы проводим круглый год, а хадж — в положенные дни месяца Зуль-хиджа. Группы небольшие — до&nbsp;20 паломников, — чтобы у каждого хватало времени на ибадат и тишины для молитвы, а куратор и наш координатор в Мекке были рядом на всём пути.</p>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- НАШИ ПРОГРАММЫ -->
+  <section class="padding-top-large-bottom-medium bg-white" id="programs" data-nav-theme="dark">
+    <div class="container-small"><div class="v-flex_center">
+      <div class="scribble_wrap u-relative">
+        <h2 class="section-title">Наши программы</h2>
+        <div class="scribble-el title-section_svg"><svg viewBox="0 0 496 90" fill="none" aria-hidden="true"><path class="scribble" d="M30 62C6 34 92 10 250 12c168 2 244 20 232 44-12 26-180 32-330 26C62 78 14 66 34 42" stroke="#1F2A44" stroke-width=".6" stroke-linecap="round"/></svg></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="padding-none bg-transparent">
+    <div class="container-large">
+      <div class="card-flick" id="cardFlick"><div class="card-flick_grid">
+        <a class="card-flick_item is-active" href="#" data-enquire data-program="Рамадан у Каабы" data-cursor-text="Оставить заявку">
+          <div class="card-flick_item-inner">
+            <div class="card-flick_image"><img src="https://images.unsplash.com/photo-1771170983433-1576bc4a7eec?auto=format&fit=crop&w=1600&q=75" alt="Кисва Каабы с золотой вязью ночью" loading="lazy"></div>
+            <div class="card-flick_overlay"></div>
+            <div class="card-flick_content"><div class="card-flick_content-inner">
+              <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Рамадан у Каабы</h3></div>
+              <div class="card-flick_footer">
+                <div class="card-flick_meta"><span class="card-flick_meta-item">от $2&nbsp;490</span><span class="itinerary-item_meta-divider"></span><span class="card-flick_meta-item">Рамадан</span></div>
+                <p class="card-flick_excerpt t-body">Ночи Рамадана рядом с Заповедной мечетью: тарауих, ифтары и время для дуа — без спешки.</p>
+                <span class="btn btn-mobile"><span class="btn-inner"><span class="btn-text">Оставить заявку</span></span></span>
+              </div>
+            </div></div>
+          </div>
+        </a>
+        <a class="card-flick_item" href="#" data-enquire data-program="Хадж" data-cursor-text="Оставить заявку">
+          <div class="card-flick_item-inner">
+            <div class="card-flick_image"><img src="https://images.unsplash.com/photo-1713302752681-0b14c1034707?auto=format&fit=crop&w=1600&q=75" alt="Золотая вязь на кисве Каабы на фоне синего неба" loading="lazy"></div>
+            <div class="card-flick_overlay"></div>
+            <div class="card-flick_content"><div class="card-flick_content-inner">
+              <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Хадж</h3></div>
+              <div class="card-flick_footer">
+                <div class="card-flick_meta"><span class="card-flick_meta-item">от $9&nbsp;900</span><span class="itinerary-item_meta-divider"></span><span class="card-flick_meta-item">Сезон хаджа</span></div>
+                <p class="card-flick_excerpt t-body">Главный путь мусульманина: Мина, Арафа, Муздалифа — с наставниками по фикху и организацией на каждом этапе.</p>
+                <span class="btn btn-mobile"><span class="btn-inner"><span class="btn-text">Оставить заявку</span></span></span>
+              </div>
+            </div></div>
+          </div>
+        </a>
+        <a class="card-flick_item" href="#" data-enquire data-program="Мекка и Медина" data-cursor-text="Оставить заявку">
+          <div class="card-flick_item-inner">
+            <div class="card-flick_image"><img src="https://images.unsplash.com/photo-1602733458155-647c07d32ef6?auto=format&fit=crop&w=1600&q=75" alt="Зелёный купол и минареты Пророческой мечети в мягком свете" loading="lazy"></div>
+            <div class="card-flick_overlay"></div>
+            <div class="card-flick_content"><div class="card-flick_content-inner">
+              <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Мекка и Медина</h3></div>
+              <div class="card-flick_footer">
+                <div class="card-flick_meta"><span class="card-flick_meta-item">от $1&nbsp;990</span></div>
+                <p class="card-flick_excerpt t-body">Наша самая востребованная умра: дни в Мекке и в Медине, посещение Пророческой мечети и время для собственных молитв.</p>
+                <span class="btn btn-mobile"><span class="btn-inner"><span class="btn-text">Оставить заявку</span></span></span>
+              </div>
+            </div></div>
+          </div>
+        </a>
+        <a class="card-flick_item" href="#" data-enquire data-program="Долгая умра" data-cursor-text="Оставить заявку">
+          <div class="card-flick_item-inner">
+            <div class="card-flick_image"><img src="https://images.unsplash.com/photo-1558261537-8fcffa3479c7?auto=format&fit=crop&w=1600&q=75" alt="Раскрытые зонты во дворе Пророческой мечети" loading="lazy"></div>
+            <div class="card-flick_overlay"></div>
+            <div class="card-flick_content"><div class="card-flick_content-inner">
+              <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Долгая умра</h3></div>
+              <div class="card-flick_footer">
+                <div class="card-flick_meta"><span class="card-flick_meta-item">от $3&nbsp;250</span><span class="itinerary-item_meta-divider"></span><span class="card-flick_meta-item">Зимний сезон</span></div>
+                <p class="card-flick_excerpt t-body">Две недели без спешки: Мекка, Медина и зияраты — места истории ислама. Много времени на ибадат и отдых.</p>
+                <span class="btn btn-mobile"><span class="btn-inner"><span class="btn-text">Оставить заявку</span></span></span>
+              </div>
+            </div></div>
+          </div>
+        </a>
+        <a class="card-flick_item" href="#" data-enquire data-program="Умра за 5 дней" data-cursor-text="Оставить заявку">
+          <div class="card-flick_item-inner">
+            <div class="card-flick_image"><img src="https://images.unsplash.com/photo-1677835238946-20fc43ab0533?auto=format&fit=crop&w=1600&q=75" alt="Арки и резные фасады мечети в тёплом свете" loading="lazy"></div>
+            <div class="card-flick_overlay"></div>
+            <div class="card-flick_content"><div class="card-flick_content-inner">
+              <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Умра за 5 дней</h3></div>
+              <div class="card-flick_footer">
+                <div class="card-flick_meta"><span class="card-flick_meta-item">от $1&nbsp;390</span><span class="itinerary-item_meta-divider"></span><span class="card-flick_meta-item">Весь год</span></div>
+                <p class="card-flick_excerpt t-body">Короткий и собранный маршрут для тех, кто ограничен во времени: прямой перелёт, трансфер и проживание рядом с мечетью.</p>
+                <span class="btn btn-mobile"><span class="btn-inner"><span class="btn-text">Оставить заявку</span></span></span>
+              </div>
+            </div></div>
+          </div>
+        </a>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ЦИТАТА ОСНОВАТЕЛЯ -->
+  <section class="padding-large bg-transparent" data-nav-theme="dark">
+    <div class="container-large">
+      <div class="home-intro_layout u-grid no-gap">
+        <div class="home-intro_col col-4 offset-4">
+          <div class="home-intro_quote u-relative">
+            <div class="v-flex_left-xs">
+              <div class="quote-mark">“</div>
+              <p class="t-body_italic text-indent-2col">Мы не продаём поездки. Мы помогаем человеку прийти к Дому Аллаха спокойно: без спешки, без суеты и без лишних забот по дороге. Всё остальное — между рабом и его Господом.</p>
+              <p class="t-body">-</p>
+              <div class="scribble-el home-quote_svg"><svg viewBox="0 0 656 120" aria-hidden="true"><path class="scribble" d="M6 64C70 24 130 100 220 58s130-16 210 6 150 6 224-18" stroke-linecap="round"/></svg></div>
+              <div class="quote-credits_wrap"><p class="t-body">Основатель агентства</p><p class="t-body is-faded">Сакина · хадж и умра</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- НАШИ МЕСТА (горизонтальный скролл) -->
+  <div class="horizontal-scroll_outer" id="places">
+    <div class="horizontal-scroll_outer-final-image" id="hsFinal">
+      <div class="image-with-overlay horizontal-scroll_outer-image" style="--overlay-opacity:.32"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=2400&q=80" alt="Пророческая мечеть в золотой час: минареты и зелёный купол" loading="lazy"><div class="image-overlay"></div></div>
+    </div>
+    <div class="horizontal-scroll" id="hs">
+      <div class="horizontal-scroll_wrapper">
+        <div class="horizontal-scroll_container" id="hsContainer">
+          <div class="horizontal-scroll_panel" id="hsPanel1">
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="hsClip" clipPathUnits="objectBoundingBox"><rect x="0" y="0" width="0.3333" height="1"/><rect x="0.3333" y="0" width="0.3334" height="1"/><rect x="0.6667" y="0" width="0.3333" height="1"/></clipPath></defs></svg>
+            <div class="horizontal-scroll_image-wrap" id="hsBehind">
+              <div class="image-with-overlay horizontal-scroll_image" id="hsBehindImg" style="--overlay-opacity:0;width:100%;height:100%"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1504900385349-4cd5a6ac2874?auto=format&fit=crop&w=2400&q=80" alt="Тихий вид на Пророческую мечеть между тёмными колоннами"><div class="image-overlay"></div></div>
+            </div>
+            <div class="horizontal-scroll_clip-wrap" id="hsClipWrap" style="clip-path:url(#hsClip)">
+              <div class="horizontal-scroll_image-wrap">
+                <img class="horizontal-scroll_image" src="https://images.unsplash.com/photo-1710695198971-3abdf7fcc82e?auto=format&fit=crop&w=2400&q=80" alt="Угол Каабы: кисва и золотая вязь на фоне неба">
+                <div class="horizontal-scroll_overlay" id="hsOverlay"></div>
+              </div>
+              <div class="horizontal-scroll_content">
+                <div class="container-large">
+                  <div class="horizontal-scroll_title-wrap"><h2 class="horizontal-scroll_title" id="hsTitle">Наши места</h2></div>
+                  <div class="panel-1_text-wrap" id="hsText">
+                    <div class="u-grid no-gap"><div class="layout-col col-2 offset-8">
+                      <div class="v-flex_left-xs">
+                        <p class="layout-title">Спокойствие в пути</p>
+                        <p class="t-body">Небольшие группы и личное сопровождение — так, чтобы у каждого паломника было время на молитву. Проживание в пешей доступности от мечети, горячее халяль-питание и тихие номера. Отдельное внимание — родителям и семьям. Всё лишнее мы берём на себя, вам остаётся только ибадат.</p>
+                      </div>
+                    </div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="horizontal-scroll_panel">
+            <div class="horizontal-scroll_camp-card" data-cursor-text="Мекка">
+              <div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div>
+              <div class="horizontal-scroll_camp-card_inner">
+                <div class="image-with-overlay image-with-overlay--fill horizontal-scroll_camp-image" style="--overlay-opacity:.34"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1627728734379-a5f8c099763e?auto=format&fit=crop&w=1800&q=75" alt="Кааба и башня с часами в Мекке" loading="lazy"><div class="image-overlay"></div></div>
+                <div class="horizontal-scroll_camp-content">
+                  <h3 class="h3">Мекка</h3>
+                  <p class="horizontal-scroll_camp-excerpt">Город, к которому обращены сердца. Заповедная мечеть, Кааба и тавафы на рассвете — в те часы, когда двор ещё тих.</p>
+                  <div class="horizontal-scroll_camp-coordinates">[ 21° 25′ 21″ с. ш., 39° 49′ 34″ в. д. ]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-scroll_panel">
+            <div class="horizontal-scroll_camp-card" data-cursor-text="Медина">
+              <div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div>
+              <div class="horizontal-scroll_camp-card_inner">
+                <div class="image-with-overlay image-with-overlay--fill horizontal-scroll_camp-image" style="--overlay-opacity:.34"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1644585185180-7b51c7f302dd?auto=format&fit=crop&w=1800&q=75" alt="Зелёный купол Пророческой мечети в розовом свете сумерек" loading="lazy"><div class="image-overlay"></div></div>
+                <div class="horizontal-scroll_camp-content">
+                  <h3 class="h3">Медина</h3>
+                  <p class="horizontal-scroll_camp-excerpt">Город Пророка ﷺ. Тихие вечера у зелёного купола, время для салавата и неспешные дни между молитвами.</p>
+                  <div class="horizontal-scroll_camp-coordinates">[ 24° 28′ 02″ с. ш., 39° 36′ 40″ в. д. ]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-scroll_panel" id="hsLastCamp">
+            <div class="horizontal-scroll_camp-card" data-cursor-text="Арафат">
+              <div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div>
+              <div class="horizontal-scroll_camp-card_inner">
+                <div class="image-with-overlay image-with-overlay--fill horizontal-scroll_camp-image" style="--overlay-opacity:.34"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1650446647974-451d05d2136d?auto=format&fit=crop&w=1800&q=75" alt="Гора Арафат под мягким небом" loading="lazy"><div class="image-overlay"></div></div>
+                <div class="horizontal-scroll_camp-content">
+                  <h3 class="h3">Арафат</h3>
+                  <p class="horizontal-scroll_camp-excerpt">Место главной стоянки хаджа. День Арафа — сердце паломничества: для тех, кто отправляется в хадж.</p>
+                  <div class="horizontal-scroll_camp-coordinates">[ 21° 21′ 17″ с. ш., 39° 59′ 03″ в. д. ]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-scroll_panel horizontal-scroll_panel--full" id="hsQuote">
+            <div class="container-large"><div class="u-grid no-gap"><div class="layout-col col-4 offset-4">
+              <div class="quote-component u-relative"><div class="v-flex_center">
+                <div class="quote-logo_wrap">
+                  <svg viewBox="0 0 74 74" fill="none" stroke="currentColor" stroke-width=".7" aria-hidden="true"><rect x="12" y="12" width="50" height="50"/><rect x="12" y="12" width="50" height="50" transform="rotate(45 37 37)"/><circle cx="37" cy="37" r="17"/><circle cx="37" cy="37" r="3"/></svg>
+                </div>
+                <div class="v-flex_center-xs">
+                  <div class="quote-mark_xl">“</div>
+                  <p class="t-body_quote">Умра до следующей умры — искупление для того, что было между ними, а награда за принятый хадж — только Рай.</p>
+                  <p class="t-body">-</p>
+                  <p class="quote-author">Хадис</p>
+                  <p class="t-body_sm">аль-Бухари и Муслим · смысл хадиса</p>
+                </div>
+              </div></div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ct-antartica_section" id="ctSection">
+      <div class="container-large"><div class="ct-antartica_content"><div class="u-grid no-gap"><div class="layout-col col-12">
+        <div class="title-fade_wrap title-fade_wrap--desktop" id="ctFade"><h2 class="title-fade">MOW – JED</h2></div>
+        <div class="title-fade_wrap title-fade_wrap--mobile"><h2 class="title-fade">MOW<br>JED</h2></div>
+      </div></div></div></div>
+    </div>
+
+    <div class="mist-divider_wrap" id="mistDivider">
+      <div class="mist-transition"><div class="mist-transition_image-container" id="mistDividerImg"><img class="mist-transition_image" src="assets/cloud-gradient.webp" alt="" width="1920" height="1080" loading="lazy"></div></div>
+    </div>
+  </div>
+
+  <!-- МАРШРУТ -->
+  <section class="padding-none bg-dark" id="route">
+    <div class="travel-globe">
+      <div class="travel-globe_head">
+        <div class="container-large">
+          <div class="h-line_el"></div>
+          <div class="travel-globe_head-layout u-grid">
+            <div class="travel-globe_head-col_left col-4"><p class="layout-title_sm is-std_case is-faded">55° 45′ с. ш. 37° 37′ в. д.<br>Москва</p></div>
+            <div class="travel-globe_head-col_center col-4">
+              <h2 class="h3">Дорога к Священной земле</h2>
+              <p class="t-body is-faded">Прямой перелёт из Москвы в Джидду, а дальше — комфортный трансфер до Мекки. Мы встречаем вас в аэропорту и берём на себя багаж и дорогу, чтобы вы думали только о намерении.</p>
+            </div>
+            <div class="travel-globe_head-col_right col-4"><p class="layout-title_sm is-std_case is-faded">21° 40′ с. ш., 39° 09′ в. д.<br>Джидда, аэропорт</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="travel-globe_outer">
+        <div class="travel-globe_component" id="globeComp">
+          <div class="travel-globe_inner" id="globeInner">
+            <svg class="travel-globe_component-img map-svg" id="mapSvg" viewBox="0 0 1440 1721" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Карта маршрута Москва — Джидда">
+              <defs>
+                <linearGradient id="landGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#363d4c"/><stop offset="1" stop-color="#1f2430"/></linearGradient>
+                <linearGradient id="landHi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9e5da"/><stop offset="1" stop-color="#8f8b82"/></linearGradient>
+                <radialGradient id="seaGlow" cx="50%" cy="88%" r="55%"><stop offset="0" stop-color="#1b2233" stop-opacity=".9"/><stop offset="1" stop-color="#090b10" stop-opacity="0"/></radialGradient>
+              </defs>
+              <rect width="1440" height="1721" fill="#090b10"/>
+              <rect width="1440" height="1721" fill="url(#seaGlow)"/>
+              <g id="mapLand"></g>
+              <g id="mapRoute"></g>
+            </svg>
+            <div id="mapLabels"></div>
+            <div class="globe-sticky_outer">
+              <div class="globe-sticky_wrap">
+                <div class="globe-sticky_layout u-grid">
+                  <div class="globe-sticky_col col-4">
+                    <div class="globe-sticky_card is-info">
+                      <div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div>
+                      <div class="globe-sticky_content-wrap">
+                        <div class="globe-sticky_info-item"><p class="t-title-italic">Время в пути</p><p class="h3 is-sans lh-150">05:30 ч</p></div>
+                        <div class="dashed-divider_white"></div>
+                        <div class="globe-sticky_info-item"><p class="t-title-italic">Расстояние</p><p class="h3 is-sans lh-150">3 800 км</p></div>
+                        <div class="dashed-divider_white"></div>
+                        <div class="globe-sticky_info-item"><p class="t-title-italic">Зимой днём в Мекке, около</p><p class="h3 is-sans lh-150">+29°C</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="globe-sticky_col col-3 offset-8">
+                    <div class="globe-sticky_card globe-floating_vid" id="globeVid">
+                      <div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div>
+                      <div class="globe-video_wrap">
+                        <button class="btn btn-image" type="button" data-enquire>
+                          <div class="image-with-overlay" style="--overlay-opacity:.2;position:absolute;inset:0"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1587617425953-9075d28b8c46?auto=format&fit=crop&w=800&q=70" alt="Коран на резной подставке и финики" loading="lazy"><div class="image-overlay"></div></div>
+                          <div class="btn-content-wrapper"><span class="btn-text">Оставить заявку</span><div class="btn-icon"><div class="icon"><svg viewBox="0 0 9 11" fill="none"><path d="M.5 1v9l8-4.5z" fill="currentColor"/></svg></div></div></div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="basic-banner" id="contact" data-nav-theme="">
+        <div class="basic-banner_bg"><img src="https://images.unsplash.com/photo-1649929938487-f1f52b2678a4?auto=format&fit=crop&w=2400&q=80" alt="Минареты Пророческой мечети на закате" loading="lazy"><div class="basic-banner_overlay"></div></div>
+        <div class="basic-banner_content"><div class="basic-banner_layout u-grid"><div class="basic-banner_inner col-6 offset-3"><div class="v-flex_center">
+          <h2 class="h3">Начните планировать свой путь</h2>
+          <div class="liquid-glass_wrap large-btn_hover"><div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular"></div>
+            <button class="btn btn-standard" type="button" data-enquire><div class="btn-inner"><span class="btn-text">Связаться</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M5.5 0v11M0 5.5h11" stroke="currentColor" stroke-width=".8"/></svg></div></div></div></button>
+          </div>
+        </div></div></div></div>
+      </section>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ФУТЕР -->
+<footer class="footer-component">
+  <div class="footer">
+    <div class="footer-container container-large">
+      <div class="footer-layout u-grid">
+        <div class="footer-col col-8">
+          <div class="footer-col_inner u-grid" style="--grid-cols:12;grid-template-columns:repeat(12,minmax(0,1fr))">
+            <div class="footer-col_inner_col col-3"><div class="footer-brand-mark"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#1F2A44" stroke-width=".9" aria-hidden="true"><rect x="4.2" y="4.2" width="15.6" height="15.6"/><rect x="4.2" y="4.2" width="15.6" height="15.6" transform="rotate(45 12 12)"/></svg></div></div>
+            <div class="footer-col_inner_col col-3"><div class="footer-menu_layout">
+              <div class="footer-menu_item"><p class="t-title-italic">Связь</p><ul>
+                <li><a class="t-body is-faded footer-link" href="https://wa.me/79391020031" target="_blank" rel="noopener">WhatsApp</a></li>
+                <li><a class="t-body is-faded footer-link" href="https://t.me/vuornn" target="_blank" rel="noopener">Telegram</a></li>
+                <li><button class="t-body is-faded footer-link" type="button" data-enquire>Оставить заявку</button></li>
+              </ul></div>
+            </div></div>
+            <div class="footer-col_inner_col col-3"><div class="footer-menu_layout">
+              <div class="footer-menu_item"><p class="t-title-italic">Программы</p><ul>
+                <li><a class="t-body is-faded footer-link" href="#programs" data-scroll>Рамадан у Каабы</a></li>
+                <li><a class="t-body is-faded footer-link" href="#programs" data-scroll>Хадж</a></li>
+                <li><a class="t-body is-faded footer-link" href="#programs" data-scroll>Мекка и Медина</a></li>
+                <li><a class="t-body is-faded footer-link" href="#programs" data-scroll>Долгая умра</a></li>
+                <li><a class="t-body is-faded footer-link" href="#programs" data-scroll>Умра за 5 дней</a></li>
+              </ul></div>
+            </div></div>
+            <div class="footer-col_inner_col col-3"><div class="footer-menu_layout">
+              <div class="footer-menu_item"><p class="t-title-italic">Места</p><ul>
+                <li><a class="t-body is-faded footer-link" href="#places" data-scroll>Мекка</a></li>
+                <li><a class="t-body is-faded footer-link" href="#places" data-scroll>Медина</a></li>
+                <li><a class="t-body is-faded footer-link" href="#places" data-scroll>Арафат</a></li>
+              </ul></div>
+              <div class="footer-menu_item"><p class="t-title-italic">О нас</p><ul>
+                <li><button class="t-body is-faded footer-link" type="button" data-flyout="how">Как это работает</button></li>
+                <li><button class="t-body is-faded footer-link" type="button" data-flyout="faq">Вопросы и ответы</button></li>
+              </ul></div>
+            </div></div>
+          </div>
+        </div>
+        <div class="footer-col col-4 offset-8">
+          <div class="footer-cta_layout">
+            <button class="btn btn-image" type="button" data-enquire>
+              <div class="image-with-overlay" style="--overlay-opacity:.2;position:absolute;inset:0"><img class="image-with-overlay_img" src="https://images.unsplash.com/photo-1667454496584-9838026037af?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy"><div class="image-overlay"></div></div>
+              <div class="btn-content-wrapper"><span class="btn-text">Подобрать программу</span><div class="btn-icon"><div class="icon"><svg viewBox="0 0 9 11" fill="none"><path d="M.5 1v9l8-4.5z" fill="currentColor"/></svg></div></div></div>
+            </button>
+            <div class="footer-cta_grid">
+              <a class="btn btn-large" href="#programs" data-scroll><div class="btn-inner"><span class="btn-text">Даты и цены</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M1 1h9v9M10 1 1 10" stroke="currentColor" stroke-width=".9"/></svg></div></div></div></a>
+              <button class="btn btn-large hover-orange" type="button" data-enquire><div class="btn-inner"><span class="btn-text">Оставить заявку</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M1 1h9v9M10 1 1 10" stroke="currentColor" stroke-width=".9"/></svg></div></div></div></button>
+            </div>
+            <a class="btn btn-large hover-blue" href="https://wa.me/79391020031?text=Ассаламу%20алейкум!%20Хочу%20узнать%20про%20хадж%20и%20умру." target="_blank" rel="noopener"><div class="btn-inner"><span class="btn-text">Написать в WhatsApp</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M1 1h9v9M10 1 1 10" stroke="currentColor" stroke-width=".9"/></svg></div></div></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom_layout">
+        <div class="footer-logo_contain container"><div class="footer-bottom_logo" id="footerLogo" aria-hidden="true"><span id="footerLogoText" style="display:inline-block">Сакина</span></div></div>
+        <div class="footer-info_layout">
+          <div class="footer-info_contain container u-grid" style="grid-template-columns:repeat(3,1fr)">
+            <div class="footer-info_left"><span class="t-body_sm">© 2026 Сакина. Хадж и умра.</span></div>
+            <div class="footer-info_middle-desktop footer-info_middle" style="display:flex"><p class="footer-quote">Не спеши — путь уже начался.</p></div>
+            <div class="footer-info_right"><a class="t-body_sm footer-link" href="#" data-legal>Политика конфиденциальности</a><a class="t-body_sm footer-link" href="#" data-legal>Публичная оферта</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLYOUT: Как это работает -->
+<div class="flyout_container is-sticky" id="flyoutHow">
+  <div class="flyout-overlay"></div>
+  <div class="flyout_component">
+    <div class="flyout-button-wrap"><div class="flyout-visible-wrap" id="howTabWrap">
+      <button class="btn btn-popup-open" type="button" aria-expanded="false" aria-controls="howPanel"><div class="btn-inner"><span class="btn-text"><span class="switch-labels">
+        <span class="icon-span open-label active">Как это работает <span class="icon" style="width:16px;height:16px"><svg viewBox="0 0 11 11" fill="none"><path d="M5.5 0v11M0 5.5h11" stroke="currentColor" stroke-width=".9"/></svg></span></span>
+        <span class="icon-span close-label">Закрыть <span class="icon" style="width:16px;height:16px"><svg viewBox="0 0 11 11" fill="none"><path d="M5.5 0v11M0 5.5h11" stroke="currentColor" stroke-width=".9"/></svg></span></span>
+      </span></span></div></button>
+    </div></div>
+    <div class="flyout_popup" id="howPanel" role="dialog" aria-label="Как это работает">
+      <div class="flyout_layout" data-lenis-prevent>
+        <div class="flyout_content"><div class="flyout_content-inner">
+          <div class="flyout_header"><h2 class="t-modal-header">Как это работает</h2></div>
+          <div class="global-flyout_flex">
+            <div class="global-flyout_content-item"><div class="global-richtext"><h3>1. Консультация</h3><p>Поездка к Священным местам требует внимательной подготовки, и наша команда проведёт вас через каждый шаг. Отправьте заявку или <a class="rich-btn" href="https://wa.me/79391020031" target="_blank" rel="noopener">напишите нам в WhatsApp</a> в удобное время — без обязательств. Мы обсудим формат поездки, ваши пожелания и даты, затем проверим наличие мест.</p></div></div>
+            <div class="global-flyout_content-item"><div class="global-richtext"><h3>2. Подтверждение</h3><p>После того как вы подтвердили даты и внесли предоплату, мы помогаем оформить всё необходимое: загранпаспорт, визу, страховку и прививки, которые требуются от паломников.</p></div></div>
+            <div class="global-flyout_content-item"><div class="global-richtext"><h3>3. Планирование</h3><p>Мы подбираем авиабилеты, проживание рядом с мечетью и трансферы. По желанию добавим в программу дополнительные дни в Медине или зияраты — посещение мест, связанных с историей ислама.</p></div></div>
+            <div class="global-flyout_content-item"><div class="global-richtext"><h3>4. Подготовка</h3><p>Перед вылетом расскажем, что взять с собой, и подготовим вас к обрядам: как войти в ихрам, порядок тавафа и саъи, важные дуа. Для тех, кто едет впервые, проводим занятие с наставником.</p></div></div>
+            <div class="global-flyout_content-item"><div class="global-richtext"><h3>5. Инструктаж</h3><p>Перед отъездом мы встретимся или проведём созвон, пройдём по маршруту, уточним расписание рейсов и ответим на любые вопросы. Куратор группы поможет с багажом и вещами, чтобы дорога прошла спокойно.</p></div></div>
+            <div class="global-flyout_content-item"><div class="global-richtext"><h3>6. Вылет</h3><p>В день вылета мы встречаем вас в аэропорту, помогаем с регистрацией и провожаем на рейс. На месте вас встретит наш координатор и проводит до отеля.</p></div></div>
+          </div>
+          <div class="faq-block" id="faqBlock">
+            <div class="flyout_header"><h2 class="t-modal-header">Вопросы и ответы</h2></div>
+            <div class="faq-item"><button type="button" aria-expanded="false"><span>Нужна ли виза?</span><span class="plus"></span></button><div class="faq-a"><div><p>Да, для умры и хаджа требуется виза Саудовской Аравии. Мы помогаем собрать документы и оформить её.</p></div></div></div>
+            <div class="faq-item"><button type="button" aria-expanded="false"><span>Могут ли ехать женщины?</span><span class="plus"></span></button><div class="faq-a"><div><p>Да. Мы заранее уточняем требования для женщин, путешествующих без махрама, и подскажем подходящий формат: семейные группы, группы сестёр, отдельное проживание.</p></div></div></div>
+            <div class="faq-item"><button type="button" aria-expanded="false"><span>Когда лучше ехать?</span><span class="plus"></span></button><div class="faq-a"><div><p>Умру можно совершать круглый год, хадж проходит в определённые дни месяца Зуль-хиджа. Рамадан — самое благодатное и самое востребованное время: бронировать место лучше заранее.</p></div></div></div>
+            <div class="faq-item"><button type="button" aria-expanded="false"><span>Что входит в стоимость?</span><span class="plus"></span></button><div class="faq-a"><div><p>Состав указан в каждой программе — обычно это перелёт, проживание, трансферы и сопровождение. Точный список мы присылаем до предоплаты.</p></div></div></div>
+            <div class="faq-item"><button type="button" aria-expanded="false"><span>Как проходит оплата?</span><span class="plus"></span></button><div class="faq-a"><div><p>Предоплата закрепляет за вами место, остальную сумму вносите до вылета. Условия и порядок возврата прописываем в договоре.</p></div></div></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FLYOUT: Заявка -->
+<div class="flyout_container" id="flyoutEnq">
+  <div class="flyout-overlay"></div>
+  <div class="flyout_component">
+    <div class="flyout_popup" role="dialog" aria-label="Оставить заявку">
+      <div class="flyout_layout" data-lenis-prevent>
+        <div class="flyout_header"><p class="t-title-italic">Ассаламу алейкум</p><h2 class="t-modal-header">Оставить заявку</h2></div>
+        <form class="enq-form" id="enqForm" novalidate>
+          <div class="enq-field"><label for="enqName">Как к вам обращаться</label><input id="enqName" name="name" type="text" autocomplete="name" placeholder="Имя"></div>
+          <div class="enq-field"><label for="enqPhone">Телефон или WhatsApp</label><input id="enqPhone" name="phone" type="tel" autocomplete="tel" placeholder="+7 ___ ___ __ __"></div>
+          <div class="enq-field"><label for="enqProgram">Программа</label>
+            <select id="enqProgram" name="program">
+              <option>Пока не определился(-ась)</option><option>Рамадан у Каабы</option><option>Хадж</option><option>Мекка и Медина</option><option>Долгая умра</option><option>Умра за 5 дней</option>
+            </select>
+          </div>
+          <div class="enq-row">
+            <div class="enq-field"><label for="enqDates">Желаемые даты</label><input id="enqDates" name="dates" type="text" placeholder="Например, март"></div>
+            <div class="enq-field"><label for="enqCount">Сколько человек</label><input id="enqCount" name="count" type="text" inputmode="numeric" placeholder="1"></div>
+          </div>
+          <div class="enq-field"><label for="enqMsg">Ваш вопрос</label><textarea id="enqMsg" name="msg" rows="2" placeholder="Если есть особые пожелания"></textarea></div>
+          <p class="enq-error" id="enqError" role="alert"></p>
+          <div class="enq-actions">
+            <button class="btn btn-large hover-orange" type="submit"><div class="btn-inner"><span class="btn-text">Отправить в WhatsApp</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M1 1h9v9M10 1 1 10" stroke="currentColor" stroke-width=".9"/></svg></div></div></div></button>
+            <a class="btn btn-large" href="https://t.me/vuornn" target="_blank" rel="noopener"><div class="btn-inner"><span class="btn-text">Или написать в Telegram</span><div class="btn-icon"><div class="icon" style="width:100%;height:100%"><svg viewBox="0 0 11 11" fill="none"><path d="M1 1h9v9M10 1 1 10" stroke="currentColor" stroke-width=".9"/></svg></div></div></div></a>
+          </div>
+          <p class="enq-note">Нажимая кнопку, вы откроете WhatsApp с готовым сообщением. Данные не сохраняются на сайте и никуда не передаются автоматически.</p>
+        </form>
+        <div style="margin-top:var(--s-25)"><button class="btn btn-large" type="button" data-close-enq style="height:var(--s-5)"><div class="btn-inner"><span class="btn-text">Закрыть</span></div></button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE -->
+<div class="cookie-banner" id="cookie" role="dialog" aria-label="Уведомление о cookie">
+  <p>Мы используем файлы cookie, чтобы сайт работал корректно. <a href="#" data-legal>Политика cookie</a></p>
+  <div class="actions"><button class="consent-btn" type="button" data-consent="accepted">Принять</button><button class="consent-btn" type="button" data-consent="rejected">Отклонить</button></div>
+</div>
+
+<div class="custom-cursor" id="cursor" aria-hidden="true">
+  <div class="custom-cursor_line-vertical"></div><div class="custom-cursor_line-horizontal"></div><div class="custom-cursor_dot"></div>
+  <div class="custom-cursor_label"><span class="custom-cursor_label-text"></span></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-array@3/dist/d3-array.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+
+<script>
+(()=>{
+"use strict";
+/* ============================================================
+   НАСТРОЙКИ (заменить на данные клиента)
+   ============================================================ */
+const WA_NUMBER="79391020031";          // WhatsApp для заявок
+const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const isDesktop=()=>matchMedia("(min-width: 769px)").matches;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+gsap.registerPlugin(ScrollTrigger);
+
+/* ---------- Lenis (плавный скролл) ---------- */
+let lenis=null;
+if(!reduce && window.Lenis){
+  lenis=new Lenis({duration:1.15,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t)),smoothWheel:true});
+  lenis.on("scroll",ScrollTrigger.update);
+  gsap.ticker.add(t=>lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+}
+const scrollLock=on=>{ if(lenis){on?lenis.stop():lenis.start()} document.documentElement.style.overflow=on?"hidden":"" };
+const scrollToEl=(sel,off=0)=>{ const el=typeof sel==="string"?$(sel):sel; if(!el) return; if(lenis) lenis.scrollTo(el,{offset:off,duration:1.6}); else el.scrollIntoView({behavior:"smooth"}) };
+
+/* ---------- Прелоадер ---------- */
+const pre=$("#preloader"), preFill=$("#preloaderFill"), preNum=$("#preloaderNum");
+scrollLock(true);
+let progress={v:0}, loaded=false, minTime=false;
+gsap.to(progress,{v:88,duration:2.2,ease:"power2.out",onUpdate:()=>{const p=Math.round(progress.v);preFill.style.width=p+"%";preNum.textContent=p+"%"}});
+setTimeout(()=>{minTime=true;finishPre()},1500);
+const finishPre=()=>{
+  if(!(loaded&&minTime)||pre.dataset.done) return; pre.dataset.done=1;
+  gsap.to(progress,{v:100,duration:.35,ease:"none",onUpdate:()=>{const p=Math.round(progress.v);preFill.style.width=p+"%";preNum.textContent=p+"%"},onComplete:()=>{
+    pre.classList.add("is-done"); document.body.classList.add("is-ready"); scrollLock(false);
+    setTimeout(()=>{pre.remove();ScrollTrigger.refresh()},1100);
+    setTimeout(showCookie,2200);
+  }});
+};
+window.addEventListener("load",()=>{loaded=true;finishPre()});
+setTimeout(()=>{loaded=true;finishPre()},6000);   // страховка, если картинки грузятся долго
+
+/* ---------- Подгонка гигантского заголовка героя ---------- */
+const heroTitle=$("#heroTitle");
+const fitTitle=()=>{
+  const box=heroTitle.parentElement.getBoundingClientRect().width; if(!box) return;
+  heroTitle.style.fontSize="100px"; const w=$("#heroTitleText").getBoundingClientRect().width;
+  const max=parseFloat(getComputedStyle(document.documentElement).fontSize)*17;
+  heroTitle.style.fontSize=Math.min(max,100*box/w*.995)+"px";
+};
+document.fonts&&document.fonts.ready.then(fitTitle); fitTitle(); addEventListener("resize",fitTitle);
+
+/* ---------- Тема навигации (светлая/тёмная) ---------- */
+const heroEl=$(".hero-banner"), mistEl=$("#mistDivider"), globeEl=$("#globeComp");
+const themeEls=$$("[data-nav-theme]").filter(e=>e.dataset.navTheme==="dark");
+const setTheme=()=>{
+  const y=40; let dark=false;
+  for(const el of themeEls){const r=el.getBoundingClientRect(); if(r.top<=y&&r.bottom>=y){dark=true;break}}
+  /* зоны белого тумана: низ героя и «мост» перед картой */
+  const hb=heroEl.getBoundingClientRect().bottom; if(hb<innerHeight*.9&&hb>y) dark=true;
+  const mt=mistEl.getBoundingClientRect().top, gt=globeEl.getBoundingClientRect().top; if(mt<-innerHeight*.5&&gt>y+20) dark=true;
+  if(dark) document.body.setAttribute("data-nav-theme","dark"); else document.body.removeAttribute("data-nav-theme");
+};
+ScrollTrigger.addEventListener("scroll",setTheme); addEventListener("scroll",setTheme,{passive:true}); setTheme();
+
+/* ============================================================
+   ГЕРОЙ
+   ============================================================ */
+const hero=$(".hero-banner"), heroWrap=$("#heroWrap");
+gsap.to(heroWrap,{y:()=>innerHeight,ease:"none",scrollTrigger:{trigger:hero,start:"top top",endTrigger:hero.nextElementSibling,end:"top top",scrub:true,invalidateOnRefresh:true}});
+gsap.fromTo(heroTitle,{filter:"blur(0px)"},{filter:"blur(10px)",ease:"none",scrollTrigger:{trigger:hero,start:"top top",end:"bottom top",scrub:true}});
+$$("[data-scroll-speed]",hero).forEach(el=>{
+  gsap.to(el,{y:()=>-innerHeight*.6,ease:"none",scrollTrigger:{trigger:hero,start:"top top",end:"bottom top",scrub:true,invalidateOnRefresh:true}});
+});
+$$(".clouds-overlay_wrap").forEach(el=>{
+  const end=parseFloat(el.dataset.cloud);
+  gsap.fromTo(el,{yPercent:100},{yPercent:end,ease:"none",scrollTrigger:{trigger:hero,start:"top top",end:"bottom top",scrub:true}});
+});
+const mistIn=(img,trig,start,end)=>{
+  img.classList.add("visible");
+  gsap.fromTo(img,{rotateX:90},{rotateX:0,ease:"none",scrollTrigger:{trigger:trig,start,end,scrub:true}});
+};
+mistIn($("#heroMist"),$(".mist-transition",hero),"top top-=80%","bottom center");
+
+/* ============================================================
+   ВСТУПЛЕНИЕ: маска текста + «рисование» росчерков
+   ============================================================ */
+$$(".text-scroll-fade").forEach(el=>{
+  gsap.fromTo(el,{"--mask-position":-40},{"--mask-position":100,ease:"none",scrollTrigger:{trigger:el,start:"top 80%",end:"bottom 60%",scrub:true}});
+});
+$$("path.scribble").forEach(p=>{
+  const len=p.getTotalLength(); p.style.strokeDasharray=len; p.style.strokeDashoffset=len;
+  ScrollTrigger.create({trigger:p.closest("svg"),start:"top 85%",once:true,onEnter:()=>gsap.to(p,{strokeDashoffset:0,duration:1.1,ease:"power2.inOut"})});
+});
+
+/* Баннер «Наш сезон»: текст плывёт вверх */
+$$("[data-scroll-scrub]").forEach(el=>{
+  const inner=el.closest(".tall-parallax-banner_inner");
+  gsap.matchMedia().add("(min-width: 769px)",()=>{
+    const rem=parseFloat(getComputedStyle(document.documentElement).fontSize);
+    gsap.fromTo(el,{y:20*rem},{y:-5*rem,ease:"none",scrollTrigger:{trigger:inner,start:"top bottom",end:"bottom top",scrub:true}});
+    return ()=>gsap.set(el,{clearProps:"y"});
+  });
+});
+
+/* ============================================================
+   КАРТОЧКИ-ФЛИППЕР
+   ============================================================ */
+(()=>{
+  const items=$$(".card-flick_item"); if(!items.length) return;
+  const N=items.length, big="50%", small=(50/(N-1))+"%";
+  let active=0, tl=null;
+  const contents=items.map(i=>$(".card-flick_content",i)), overlays=items.map(i=>$(".card-flick_overlay",i));
+  gsap.matchMedia().add("(min-width: 769px)",()=>{
+    items.forEach((el,i)=>{ gsap.set(el,{width:i===active?big:small}); gsap.set(contents[i],{opacity:i===active?1:0}); gsap.set(overlays[i],{opacity:i===active?0:1}); });
+    const go=i=>{
+      if(i===active) return; active=i; tl&&tl.kill(); tl=gsap.timeline();
+      items.forEach((el,k)=>{
+        const on=k===i; el.classList.toggle("is-active",on);
+        tl.to(el,{width:on?big:small,duration:.75,ease:"expo.out"},0)
+          .to(overlays[k],{opacity:on?0:1,duration:.2,ease:"expo.out"},0)
+          .to(contents[k],{opacity:on?1:0,duration:.75,ease:on?"power1":"expo.out"},0);
+      });
+    };
+    const hs=items.map((el,i)=>{const f=()=>go(i);el.addEventListener("mouseenter",f);return [el,f]});
+    return ()=>{ hs.forEach(([el,f])=>el.removeEventListener("mouseenter",f)); items.forEach((el,i)=>{gsap.set(el,{clearProps:"width"});gsap.set(contents[i],{clearProps:"opacity"});gsap.set(overlays[i],{clearProps:"opacity"})}); };
+  });
+})();
+
+/* ============================================================
+   ГОРИЗОНТАЛЬНЫЙ СКРОЛЛ «Наши места»
+   ============================================================ */
+const hsSetup=()=>{
+  const section=$("#hs"), container=$("#hsContainer"), title=$("#hsTitle"), overlay=$("#hsOverlay"), text=$("#hsText");
+  const behindWrap=$("#hsBehind"), behindImg=$("#hsBehindImg"), clipWrap=$("#hsClipWrap"), last=$("#hsLastCamp"), quote=$("#hsQuote");
+  const finalImg=$("#hsFinal"), outer=$(".horizontal-scroll_outer"), ct=$("#ctSection"), ctFade=$("#ctFade"), mist=$("#mistDivider");
+  const desk=isDesktop(); const rem=parseFloat(getComputedStyle(document.documentElement).fontSize);
+  const distX=container.scrollWidth-innerWidth, vh=innerHeight, textDist=vh*1.5, clipDist=vh, hDist=distX*1.5;
+  const firstSize=(desk?5.625:2)*rem, endSize=(desk?3.75:1.5)*rem;
+
+  /* появление секции: заголовок сжимается, картинка «раскрывается» */
+  const arrive={trigger:section,start:"top bottom",end:"top top",scrub:true};
+  gsap.to(title,{fontSize:firstSize,ease:"none",scrollTrigger:arrive});
+  gsap.fromTo(overlay,{opacity:0},{opacity:.1,ease:"none",scrollTrigger:arrive});
+  gsap.fromTo("#hsPanel1",{clipPath:"inset(0 10% 0 10%)"},{clipPath:"inset(0 0% 0 0%)",ease:"none",scrollTrigger:arrive,clearProps:"clipPath"});
+  gsap.fromTo(text,{top:"100%"},{top:"-50%",ease:"none",scrollTrigger:{trigger:section,start:"top 40%",end:"bottom top",scrub:true}});
+
+  /* закреплённая последовательность */
+  const tl=gsap.timeline({scrollTrigger:{trigger:section,start:"top top",end:()=>"+="+(textDist+clipDist+hDist),pin:true,scrub:true,invalidateOnRefresh:true}});
+  tl.addLabel("textScroll").fromTo(title,{fontSize:firstSize},{fontSize:endSize,ease:"none",duration:textDist*.5})
+    .addLabel("clipReveal")
+    .to("#hsClip rect:nth-child(3)",{attr:{width:0},ease:"none",duration:clipDist*.5},"clipReveal")
+    .to("#hsClip rect:nth-child(2)",{attr:{width:0},ease:"none",duration:clipDist*.75},"clipReveal")
+    .to("#hsClip rect:nth-child(1)",{attr:{width:0},ease:"none",duration:clipDist},"clipReveal")
+    .addLabel("horizontalScroll","clipReveal+="+(clipDist*.3))
+    .to(container,{x:-distX,ease:"none",duration:hDist},"horizontalScroll")
+    .to(behindWrap,{x:distX,ease:"none",duration:hDist},"horizontalScroll")
+    .to(clipWrap,{x:distX,ease:"none",duration:hDist},"horizontalScroll");
+  /* «вторая» картинка уходит вправо, открывая фон */
+  const rx={trigger:last,start:"right-=30% right",endTrigger:quote,end:"right right",containerAnimation:tl,scrub:true};
+  gsap.fromTo(behindWrap,{clipPath:"inset(0% 0% 0% 0%)"},{clipPath:"inset(0% 100% 0% 0%)",ease:"none",scrollTrigger:rx});
+  gsap.fromTo(behindImg,{"--overlay-opacity":0},{"--overlay-opacity":.4,ease:"none",scrollTrigger:rx});
+
+  /* итоговый фон закрепляется, пока идёт вся секция */
+  ScrollTrigger.create({trigger:finalImg,start:"top top",endTrigger:mist,end:"top top",pin:true,pinSpacing:false});
+
+  /* MOW – JED */
+  const ctT={trigger:ct,start:"center center",end:"bottom top",endTrigger:mist,scrub:true};
+  gsap.fromTo(ct,{y:"0svh"},{y:"120svh",ease:"none",scrollTrigger:ctT});
+  gsap.to(ctFade,{opacity:.5,ease:"none",scrollTrigger:ctT});
+  mistIn($("#mistDividerImg"),$(".mist-transition",mist),"top bottom","bottom top");
+};
+
+/* ============================================================
+   КАРТА МАРШРУТА
+   ============================================================ */
+(()=>{
+  const W=1440,H=1721, svg=$("#mapSvg"), land=$("#mapLand"), routeG=$("#mapRoute"), labels=$("#mapLabels");
+  const MOW=[37.62,55.75], JED=[39.17,21.68];
+  const proj=d3.geoMercator().center([39.2,38.4]).scale(1180).translate([W/2,H/2]);
+  const P=c=>proj(c);
+  const NS="http://www.w3.org/2000/svg";
+  const el=(n,a={},p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e};
+
+  /* градуировочная сетка */
+  const pathGen=d3.geoPath(proj);
+  const grat=d3.geoGraticule().step([5,5]);
+  el("path",{class:"grat",d:pathGen(grat())},land);
+
+  const drawLand=topo=>{
+    const countries=topojson.feature(topo,topo.objects.countries).features;
+    countries.forEach(f=>{ const isSA=(f.properties&&f.properties.name==="Saudi Arabia"); el("path",{class:isSA?"land-hi":"land",d:pathGen(f)||""},land); });
+  };
+  fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(r=>r.json()).then(drawLand).catch(()=>{});
+
+  /* маршрут — дуга между точками */
+  const [sx,sy]=P(MOW),[ex,ey]=P(JED), mx=(sx+ex)/2, my=(sy+ey)/2;
+  const cx=mx-230, cy=my-60;
+  const d=`M${sx.toFixed(1)} ${sy.toFixed(1)} Q${cx.toFixed(1)} ${cy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+  el("path",{class:"route-base",d},routeG);
+  const flown=el("path",{class:"route-flown",d},routeG);
+  el("circle",{class:"pt-start",cx:sx,cy:sy,r:5},routeG);
+  el("circle",{class:"pt-end",cx:ex,cy:ey,r:4},routeG);
+  const ind=el("g",{},routeG);
+  for(let i=0;i<3;i++) el("circle",{class:"ind-ping",cx:sx,cy:sy,r:7},ind);
+  const core=el("circle",{class:"ind-core",cx:sx,cy:sy,r:6.5},ind);
+  const pings=$$(".ind-ping",ind);
+  const len=flown.getTotalLength(); flown.style.strokeDasharray=len; flown.style.strokeDashoffset=len;
+
+  /* подписи (проценты от размера карты) */
+  const add=(cls,html,c,dx=0,dy=0)=>{const [x,y]=P(c);const d=document.createElement("div");d.className="map-location_item "+cls;d.style.left=((x+dx)/W*100)+"%";d.style.top=((y+dy)/H*100)+"%";d.innerHTML=html;labels.appendChild(d)};
+  add("is-white",`<p class="t-title-italic is-faded">Отправление</p><p class="layout-title_md">Москва, Россия</p>`,MOW,0,-70);
+  add("",`<p class="layout-title_md is-faded_2">Чёрное<br>море</p>`,[34.5,43.2]);
+  add("",`<p class="layout-title_md is-faded_2">Каспийское<br>море</p>`,[50.8,41.5]);
+  add("",`<p class="layout-title_md is-faded_2">Красное<br>море</p>`,[36.3,25.2]);
+  add("is-white",`<p class="t-title-italic">Джидда → Мекка</p><p class="layout-title_md">Саудовская Аравия</p>`,JED,150,70);
+
+  /* привязка к скроллу */
+  const inner=$("#globeInner"), comp=$("#globeComp"), info=$(".is-info"), vid=$("#globeVid");
+  const setup=()=>{
+    const upd=p=>{ flown.style.strokeDashoffset=len*(1-p); const pt=flown.getPointAtLength(len*p); core.setAttribute("cx",pt.x);core.setAttribute("cy",pt.y); pings.forEach(c=>{c.setAttribute("cx",pt.x);c.setAttribute("cy",pt.y)}); };
+    ScrollTrigger.create({trigger:svg,start:"top bottom",end:"bottom top",scrub:true,invalidateOnRefresh:true,onUpdate:s=>upd(s.progress)});
+    upd(0);
+    gsap.to(inner,{y:()=>innerHeight,ease:"none",scrollTrigger:{trigger:comp,start:"top top",end:"bottom top",scrub:true,invalidateOnRefresh:true}});
+    gsap.fromTo(inner,{yPercent:-5},{yPercent:0,ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"top top",scrub:true,invalidateOnRefresh:true}});
+    gsap.matchMedia().add("(min-width: 769px)",()=>{
+      gsap.fromTo(vid,{y:()=>innerHeight},{y:()=>-innerHeight*.2,ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"bottom top",scrub:true,invalidateOnRefresh:true}});
+      gsap.fromTo(info,{y:"0vh"},{y:"40vh",ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"bottom bottom",scrub:true,invalidateOnRefresh:true}});
+    });
+  };
+  window.__mapSetup=setup;
+})();
+
+/* запуск сложных секций после раскладки */
+hsSetup(); window.__mapSetup&&window.__mapSetup();
+
+/* ============================================================
+   Финальный баннер: раскрытие
+   ============================================================ */
+const banner=$(".basic-banner");
+gsap.matchMedia().add("(min-width: 769px)",()=>{
+  gsap.fromTo(banner,{clipPath:"inset(0 1.25rem 0 1.25rem round 0.375rem)"},{clipPath:"inset(0 0rem 0 0rem round 0rem)",ease:"none",scrollTrigger:{trigger:banner,start:"top 80%",end:"top 50%",scrub:true}});
+});
+
+window.addEventListener("load",()=>ScrollTrigger.refresh());
+
+/* ============================================================
+   FLYOUT «Как это работает» + вкладка справа
+   ============================================================ */
+const fly=(root)=>{
+  const comp=$(".flyout_component",root), ov=$(".flyout-overlay",root); let open=false;
+  root.classList.add("is-ready");
+  const isMob=()=>!isDesktop();
+  const set=(v)=>{
+    open=v; root.classList.toggle("is-active",v);
+    const btn=$(".btn-popup-open",root); if(btn){btn.setAttribute("aria-expanded",v);$(".open-label",root).classList.toggle("active",!v);$(".close-label",root).classList.toggle("active",v)}
+    gsap.to(comp,isMob()?{yPercent:v?0:100,xPercent:0,duration:.8,ease:"power4.inOut"}:{xPercent:v?0:100,yPercent:0,duration:.8,ease:"power4.inOut"});
+    gsap.to(ov,{opacity:v?1:0,duration:.6,ease:"power2.out"});
+    scrollLock(v);
+  };
+  gsap.set(comp,isMob()?{yPercent:100,xPercent:0}:{xPercent:100,yPercent:0});
+  ov.addEventListener("click",()=>set(false));
+  $(".btn-popup-open",root)&&$(".btn-popup-open",root).addEventListener("click",()=>set(!open));
+  return {set,isOpen:()=>open};
+};
+const howFly=fly($("#flyoutHow")), enqFly=fly($("#flyoutEnq"));
+{
+  const tab=$("#howTabWrap");
+  const chk=()=>{ const y=scrollY, past=y>innerHeight*1.1; const ft=$(".footer-component").getBoundingClientRect().top<innerHeight*.6; tab.classList.toggle("is-visible",past&&!ft&&!enqFly.isOpen()) };
+  addEventListener("scroll",chk,{passive:true}); chk();
+}
+$$("[data-flyout]").forEach(b=>b.addEventListener("click",e=>{
+  e.preventDefault(); closeMenu();
+  setTimeout(()=>{ howFly.set(true); if(b.dataset.flyout==="faq") setTimeout(()=>{const c=$("#flyoutHow .flyout_layout"),f=$("#faqBlock");c.scrollTo({top:f.offsetTop-40,behavior:"smooth"})},500) },200);
+}));
+$$(".faq-item button").forEach(b=>b.addEventListener("click",()=>{const it=b.parentElement,o=!it.classList.contains("is-open");it.classList.toggle("is-open",o);b.setAttribute("aria-expanded",o)}));
+
+/* ============================================================
+   ЗАЯВКА → WhatsApp
+   ============================================================ */
+$$("[data-enquire]").forEach(b=>b.addEventListener("click",e=>{
+  e.preventDefault(); closeMenu();
+  if(b.dataset.program){ const s=$("#enqProgram"); [...s.options].forEach(o=>{if(o.text===b.dataset.program) s.value=o.value}); }
+  setTimeout(()=>enqFly.set(true),b.closest("#menu")?350:0);
+}));
+$$("[data-close-enq]").forEach(b=>b.addEventListener("click",()=>enqFly.set(false)));
+$("#enqForm").addEventListener("submit",e=>{
+  e.preventDefault(); const f=e.target, name=f.name.value.trim(), phone=f.phone.value.trim(), err=$("#enqError");
+  if(!name){err.textContent="Пожалуйста, укажите, как к вам обращаться.";f.name.focus();return}
+  if(phone.replace(/\D/g,"").length<7){err.textContent="Проверьте номер телефона — так мы сможем вам ответить.";f.phone.focus();return}
+  err.textContent="";
+  const lines=["Ассаламу алейкум!","Хочу узнать подробнее про хадж и умру.","Программа: "+f.program.value];
+  if(f.dates.value.trim()) lines.push("Даты: "+f.dates.value.trim());
+  if(f.count.value.trim()) lines.push("Человек: "+f.count.value.trim());
+  if(f.msg.value.trim()) lines.push("Вопрос: "+f.msg.value.trim());
+  lines.push("Меня зовут "+name+", телефон: "+phone);
+  window.open("https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(lines.join("\n")),"_blank","noopener");
+});
+
+/* ============================================================
+   МЕНЮ
+   ============================================================ */
+const menu=$("#menu"), acc=$$(".menu-dropdown_item",menu);
+const openAcc=k=>acc.forEach(i=>i.classList.toggle("submenu-open",i.dataset.acc===k));
+const showImg=k=>{$$(".menu-img_item",menu).forEach(i=>i.classList.toggle("is-on",i.dataset.k===k))};
+function openMenu(k){ openAcc(k||"programs"); showImg({programs:"t1",places:"c1",about:"p1"}[k||"programs"]); menu.classList.add("open"); menu.setAttribute("aria-hidden","false"); document.body.dataset.menuOpen="true"; scrollLock(true);
+  $$("[data-menu]").forEach(b=>b.classList.toggle("is-active",b.dataset.menu===k&&b.classList.contains("nav-link-btn"))); }
+function closeMenu(){ if(!menu.classList.contains("open")) return; menu.classList.remove("open"); menu.setAttribute("aria-hidden","true"); delete document.body.dataset.menuOpen; if(!howFly.isOpen()&&!enqFly.isOpen()) scrollLock(false); $$("[data-menu]").forEach(b=>b.classList.remove("is-active")); }
+$$("[data-menu]").forEach(b=>b.addEventListener("click",()=>{ if(menu.classList.contains("open")&&b.classList.contains("is-active")) closeMenu(); else openMenu(b.dataset.menu)}));
+$$("[data-menu-close]").forEach(b=>b.addEventListener("click",closeMenu));
+acc.forEach(i=>$(".menu-dropdown_title",i).addEventListener("click",()=>openAcc(i.classList.contains("submenu-open")?null:i.dataset.acc)));
+$$("[data-img]",menu).forEach(a=>{a.addEventListener("mouseenter",()=>showImg(a.dataset.img));a.addEventListener("focus",()=>showImg(a.dataset.img))});
+$$("[data-menu-link]",menu).forEach(a=>a.addEventListener("click",e=>{ const h=a.getAttribute("href"); if(h&&h.startsWith("#")){e.preventDefault();closeMenu();setTimeout(()=>h==="#top"?scrollToEl(document.body):scrollToEl(h),300)} }));
+addEventListener("keydown",e=>{ if(e.key==="Escape"){closeMenu();howFly.set(false);enqFly.set(false)} });
+
+/* ============================================================
+   ЯКОРЯ
+   ============================================================ */
+$$("[data-scroll]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();scrollToEl(a.getAttribute("href"))}));
+$$("[data-scroll-to]").forEach(a=>a.addEventListener("click",()=>scrollToEl(a.dataset.scrollTo)));
+$$('a[href="#top"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();lenis?lenis.scrollTo(0,{duration:1.6}):scrollTo({top:0,behavior:"smooth"})}));
+$$("[data-legal]").forEach(a=>a.addEventListener("click",e=>e.preventDefault()));
+
+/* ============================================================
+   КАСТОМНЫЙ КУРСОР
+   ============================================================ */
+(()=>{
+  if(!matchMedia("(hover:hover) and (pointer:fine)").matches) return;
+  const c=$("#cursor"), dot=$(".custom-cursor_dot",c), lv=$(".custom-cursor_line-vertical",c), lh=$(".custom-cursor_line-horizontal",c), lab=$(".custom-cursor_label",c), labT=$(".custom-cursor_label-text",c);
+  gsap.set(c,{xPercent:-150,yPercent:-150}); gsap.set(c,{xPercent:0,yPercent:0});
+  const qx=gsap.quickTo(c,"x",{duration:.3,ease:"power3.out"}), qy=gsap.quickTo(c,"y",{duration:.3,ease:"power3.out"});
+  let mx=-100,my=-100,on=false,txt="";
+  const isInt=e=>e&&e.closest&&e.closest("a,button,[data-cursor-text]");
+  const apply=(o,t)=>{ if(o===on&&t===txt) return; on=o;txt=t; labT.textContent=t;
+    gsap.to(dot,{rotation:o?45:0,duration:.3,ease:"power2.out"}); gsap.to(lv,{height:o?"0.75rem":0,opacity:o?1:0,duration:.3}); gsap.to(lh,{width:o?"0.75rem":0,opacity:o?1:0,duration:.3}); gsap.to(lab,{opacity:t?1:0,duration:.3}); };
+  addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY;qx(mx);qy(my)});
+  document.addEventListener("mouseover",e=>{if(!e.target.closest) return; const t=e.target.closest("[data-cursor-text]"); if(t) apply(true,t.dataset.cursorText); else if(isInt(e.target)) apply(true,""); });
+  document.addEventListener("mouseout",e=>{ if(isInt(e.target)) apply(false,"") });
+  addEventListener("scroll",()=>{const e=document.elementFromPoint(mx,my); if(!e) return apply(false,""); const t=e.closest("[data-cursor-text]"); t?apply(true,t.dataset.cursorText):(isInt(e)?apply(true,""):apply(false,""))},{capture:true,passive:true});
+})();
+
+/* ============================================================
+   COOKIE
+   ============================================================ */
+function showCookie(){ if(store.get("cookie-consent")) return; $("#cookie").classList.add("visible"); }
+$$("[data-consent]").forEach(b=>b.addEventListener("click",()=>{store.set("cookie-consent",b.dataset.consent);$("#cookie").classList.remove("visible")}));
+
+/* Подпись логотипа в футере: вписать по ширине */
+const fitFooter=()=>{const el=$("#footerLogo"),w=el.clientWidth; if(!w) return; el.style.fontSize="100px"; const tw=$("#footerLogoText").getBoundingClientRect().width; el.style.fontSize=(100*w/tw*.985)+"px"; el.style.height=(parseFloat(el.style.fontSize)*.86)+"px"};
+document.fonts&&document.fonts.ready.then(fitFooter); addEventListener("resize",fitFooter); addEventListener("load",fitFooter);
+
+document.fonts&&document.fonts.ready.then(()=>ScrollTrigger.refresh());
+addEventListener("resize",()=>ScrollTrigger.refresh());
+})();
+</script>
+</body>
+</html>

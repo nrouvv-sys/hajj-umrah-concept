@@ -666,6 +666,58 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
   .enq-row{grid-template-columns:1fr}
   .preloader-bottom .text-quote{display:none}
 }
+
+/* ===== мобильная версия: правки 2 ===== */
+.cf-controls{display:none}
+.to-top{display:none}
+@media (max-width:767px){
+  /* Наш сезон: текст на фото, с отступом сверху */
+  .wd-mnt .tall-parallax-banner_inner{height:100svh}
+  .wd-mnt .img-fill{top:0!important;height:100%;object-position:68% 50%}
+  .tall-parallax-banner .container-large{padding-top:7.5rem}
+  .tall-parallax-banner .t-body{font-size:1rem;line-height:1.55}
+  .tall-parallax-banner .layout-title{font-size:1.15rem}
+
+  /* Наши программы: карусель со свайпом */
+  .card-flick{overflow:visible;border-radius:0;margin-inline:-.75rem}
+  .card-flick_grid{flex-direction:row;gap:.75rem;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:1rem;padding:0 1rem;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+  .card-flick_item{flex:0 0 82vw;width:82vw;height:70svh;scroll-snap-align:start;scroll-snap-stop:always}
+  .card-flick_image img{width:100%;height:100%;min-width:0;object-fit:cover}
+  .cf-controls{display:flex;justify-content:space-between;align-items:center;margin:1.25rem .5rem 0}
+  .cf-dots{display:flex;gap:.5rem;align-items:center}
+  .cf-dot{width:.5rem;height:.5rem;padding:0;border-radius:99px;background:rgba(31,42,68,.22);transition:width .35s cubic-bezier(.5,1,.89,1),background .3s}
+  .cf-dot.is-on{width:1.7rem;background:var(--accent)}
+  .cf-arrows{display:flex;gap:.6rem}
+  .cf-arrow{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;border:1px solid rgba(31,42,68,.22);color:var(--ink);transition:background .3s,color .3s,opacity .3s}
+  .cf-arrow svg{width:1rem;height:.65rem}
+  .cf-arrow:active{background:var(--ink);color:#fff}
+  .cf-arrow:disabled{opacity:.3}
+
+  /* Дорога: карточки поверх карты, как на десктопе */
+  .travel-globe_component-img{aspect-ratio:auto}
+  .globe-sticky_outer{position:absolute;inset:0;height:100%;top:0}
+  .globe-sticky_wrap{position:sticky;top:0;height:100svh;padding:.75rem;align-items:flex-end}
+  .globe-sticky_layout.u-grid{display:flex;flex-direction:column-reverse;gap:.5rem;width:100%}
+  .globe-sticky_col{width:100%}
+  .globe-sticky_content-wrap{display:grid;grid-template-columns:repeat(3,1fr);column-gap:.6rem;row-gap:0;padding:.9rem}
+  .globe-sticky_content-wrap .dashed-divider_white{display:none}
+  .globe-sticky_info-item{row-gap:.25rem}
+  .globe-sticky_info-item .t-title-italic{font-size:.75rem;line-height:1.15}
+  .globe-sticky_info-item .h3{font-size:1.05rem!important;line-height:1.2}
+  .globe-video_wrap{padding:.3rem}
+  .globe-video_wrap .btn-image{height:3.1rem;min-height:0;aspect-ratio:auto;padding:0 1rem}
+  .globe-video_wrap .btn-image .btn-content-wrapper{width:auto;column-gap:1rem}
+
+  /* Футер: только кнопки, без длинных списков */
+  .footer-col.col-8{display:none}
+  .footer-layout{padding-top:5.5rem}
+  .footer{row-gap:3rem}
+
+  /* «Наверх» */
+  .to-top{display:grid;place-items:center;position:fixed;right:1rem;bottom:1rem;z-index:9000;width:3.1rem;height:3.1rem;border-radius:50%;color:#fff;background:rgba(14,17,24,.72);border:1px solid rgba(255,255,255,.2);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);opacity:0;transform:translateY(1rem);pointer-events:none;transition:opacity .35s,transform .45s cubic-bezier(.16,1,.3,1)}
+  .to-top svg{width:1rem;height:.65rem}
+  .to-top.is-on{opacity:1;transform:none;pointer-events:auto}
+}
 @media (prefers-reduced-motion:reduce){
   .hero-banner_bg img{animation:none!important}
   [data-reveal]{animation-duration:.01s!important}
@@ -765,18 +817,18 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
           </div>
           <div class="menu-col col-4 is-desktop">
             <div class="menu-img_wrap" id="menuImgs">
-              <div class="menu-img_item is-on" data-k="t1"><img decoding="async" src="img/1771170983433-1576bc4a7eec-1024.webp" srcset="img/1771170983433-1576bc4a7eec-640.webp 640w, img/1771170983433-1576bc4a7eec-1024.webp 1024w, img/1771170983433-1576bc4a7eec-1600.webp 1600w, img/1771170983433-1576bc4a7eec-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="t2"><img decoding="async" src="img/1713302752681-0b14c1034707-1024.webp" srcset="img/1713302752681-0b14c1034707-640.webp 640w, img/1713302752681-0b14c1034707-1024.webp 1024w, img/1713302752681-0b14c1034707-1600.webp 1600w, img/1713302752681-0b14c1034707-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="t3"><img decoding="async" src="img/1602733458155-647c07d32ef6-1024.webp" srcset="img/1602733458155-647c07d32ef6-640.webp 640w, img/1602733458155-647c07d32ef6-1024.webp 1024w, img/1602733458155-647c07d32ef6-1600.webp 1600w, img/1602733458155-647c07d32ef6-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="t4"><img decoding="async" src="img/1558261537-8fcffa3479c7-1024.webp" srcset="img/1558261537-8fcffa3479c7-640.webp 640w, img/1558261537-8fcffa3479c7-1024.webp 1024w, img/1558261537-8fcffa3479c7-1600.webp 1600w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="t5"><img decoding="async" src="img/1677835238946-20fc43ab0533-1024.webp" srcset="img/1677835238946-20fc43ab0533-640.webp 640w, img/1677835238946-20fc43ab0533-1024.webp 1024w, img/1677835238946-20fc43ab0533-1600.webp 1600w, img/1677835238946-20fc43ab0533-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="c1"><img decoding="async" src="img/1627728734379-a5f8c099763e-1024.webp" srcset="img/1627728734379-a5f8c099763e-640.webp 640w, img/1627728734379-a5f8c099763e-1024.webp 1024w, img/1627728734379-a5f8c099763e-1600.webp 1600w, img/1627728734379-a5f8c099763e-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="c2"><img decoding="async" src="img/1644585185180-7b51c7f302dd-1024.webp" srcset="img/1644585185180-7b51c7f302dd-640.webp 640w, img/1644585185180-7b51c7f302dd-1024.webp 1024w, img/1644585185180-7b51c7f302dd-1600.webp 1600w, img/1644585185180-7b51c7f302dd-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="c3"><img decoding="async" src="img/1650446647974-451d05d2136d-1024.webp" srcset="img/1650446647974-451d05d2136d-640.webp 640w, img/1650446647974-451d05d2136d-1024.webp 1024w, img/1650446647974-451d05d2136d-1600.webp 1600w, img/1650446647974-451d05d2136d-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="map"><img decoding="async" src="img/1760530098172-d28d2e05b659-1024.webp" srcset="img/1760530098172-d28d2e05b659-640.webp 640w, img/1760530098172-d28d2e05b659-1024.webp 1024w, img/1760530098172-d28d2e05b659-1600.webp 1600w, img/1760530098172-d28d2e05b659-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="p1"><img decoding="async" src="img/1710695198971-3abdf7fcc82e-1024.webp" srcset="img/1710695198971-3abdf7fcc82e-640.webp 640w, img/1710695198971-3abdf7fcc82e-1024.webp 1024w, img/1710695198971-3abdf7fcc82e-1600.webp 1600w, img/1710695198971-3abdf7fcc82e-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="p2"><img decoding="async" src="img/1677835214504-9648944c3e50-1024.webp" srcset="img/1677835214504-9648944c3e50-640.webp 640w, img/1677835214504-9648944c3e50-1024.webp 1024w, img/1677835214504-9648944c3e50-1600.webp 1600w, img/1677835214504-9648944c3e50-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
-              <div class="menu-img_item" data-k="fin"><img decoding="async" src="img/1649929938487-f1f52b2678a4-1024.webp" srcset="img/1649929938487-f1f52b2678a4-640.webp 640w, img/1649929938487-f1f52b2678a4-1024.webp 1024w, img/1649929938487-f1f52b2678a4-1600.webp 1600w, img/1649929938487-f1f52b2678a4-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
+              <div class="menu-img_item is-on" data-k="t1"><img decoding="async" src="img/1771170983433-1576bc4a7eec-1024.webp" srcset="img/1771170983433-1576bc4a7eec-640.webp 640w, img/1771170983433-1576bc4a7eec-1024.webp 1024w, img/1771170983433-1576bc4a7eec-1600.webp 1600w, img/1771170983433-1576bc4a7eec-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="t2"><img decoding="async" src="img/1713302752681-0b14c1034707-1024.webp" srcset="img/1713302752681-0b14c1034707-640.webp 640w, img/1713302752681-0b14c1034707-1024.webp 1024w, img/1713302752681-0b14c1034707-1600.webp 1600w, img/1713302752681-0b14c1034707-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="t3"><img decoding="async" src="img/1602733458155-647c07d32ef6-1024.webp" srcset="img/1602733458155-647c07d32ef6-640.webp 640w, img/1602733458155-647c07d32ef6-1024.webp 1024w, img/1602733458155-647c07d32ef6-1600.webp 1600w, img/1602733458155-647c07d32ef6-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="t4"><img decoding="async" src="img/1558261537-8fcffa3479c7-1024.webp" srcset="img/1558261537-8fcffa3479c7-640.webp 640w, img/1558261537-8fcffa3479c7-1024.webp 1024w, img/1558261537-8fcffa3479c7-1600.webp 1600w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="t5"><img decoding="async" src="img/1677835238946-20fc43ab0533-1024.webp" srcset="img/1677835238946-20fc43ab0533-640.webp 640w, img/1677835238946-20fc43ab0533-1024.webp 1024w, img/1677835238946-20fc43ab0533-1600.webp 1600w, img/1677835238946-20fc43ab0533-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="c1"><img decoding="async" src="img/1627728734379-a5f8c099763e-1024.webp" srcset="img/1627728734379-a5f8c099763e-640.webp 640w, img/1627728734379-a5f8c099763e-1024.webp 1024w, img/1627728734379-a5f8c099763e-1600.webp 1600w, img/1627728734379-a5f8c099763e-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="c2"><img decoding="async" src="img/1644585185180-7b51c7f302dd-1024.webp" srcset="img/1644585185180-7b51c7f302dd-640.webp 640w, img/1644585185180-7b51c7f302dd-1024.webp 1024w, img/1644585185180-7b51c7f302dd-1600.webp 1600w, img/1644585185180-7b51c7f302dd-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="c3"><img decoding="async" src="img/1650446647974-451d05d2136d-1024.webp" srcset="img/1650446647974-451d05d2136d-640.webp 640w, img/1650446647974-451d05d2136d-1024.webp 1024w, img/1650446647974-451d05d2136d-1600.webp 1600w, img/1650446647974-451d05d2136d-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="map"><img decoding="async" src="img/1760530098172-d28d2e05b659-1024.webp" srcset="img/1760530098172-d28d2e05b659-640.webp 640w, img/1760530098172-d28d2e05b659-1024.webp 1024w, img/1760530098172-d28d2e05b659-1600.webp 1600w, img/1760530098172-d28d2e05b659-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="p1"><img decoding="async" src="img/1710695198971-3abdf7fcc82e-1024.webp" srcset="img/1710695198971-3abdf7fcc82e-640.webp 640w, img/1710695198971-3abdf7fcc82e-1024.webp 1024w, img/1710695198971-3abdf7fcc82e-1600.webp 1600w, img/1710695198971-3abdf7fcc82e-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="p2"><img decoding="async" src="img/1677835214504-9648944c3e50-1024.webp" srcset="img/1677835214504-9648944c3e50-640.webp 640w, img/1677835214504-9648944c3e50-1024.webp 1024w, img/1677835214504-9648944c3e50-1600.webp 1600w, img/1677835214504-9648944c3e50-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
+              <div class="menu-img_item" data-k="fin"><img decoding="async" src="img/1649929938487-f1f52b2678a4-1024.webp" srcset="img/1649929938487-f1f52b2678a4-640.webp 640w, img/1649929938487-f1f52b2678a4-1024.webp 1024w, img/1649929938487-f1f52b2678a4-1600.webp 1600w, img/1649929938487-f1f52b2678a4-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
             </div>
           </div>
         </div>
@@ -802,7 +854,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
             <div class="hero-banner_col col-3 left-col"><p class="t-title-italic t-balance">Путь к Священным местам — спокойно, бережно и без суеты</p></div>
             <div class="hero-banner_col col-3 offset-10">
               <button class="btn btn-image-hover" type="button" data-scroll-to="#programs">
-                <div class="btn-preview-image"><img decoding="async" src="img/1667454496584-9838026037af-640.webp" srcset="img/1667454496584-9838026037af-640.webp 640w, img/1667454496584-9838026037af-1024.webp 1024w, img/1667454496584-9838026037af-1600.webp 1600w, img/1667454496584-9838026037af-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt=""></div>
+                <div class="btn-preview-image"><img decoding="async" src="img/1667454496584-9838026037af-640.webp" srcset="img/1667454496584-9838026037af-640.webp 640w, img/1667454496584-9838026037af-1024.webp 1024w, img/1667454496584-9838026037af-1600.webp 1600w, img/1667454496584-9838026037af-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt=""></div>
                 <div class="btn-content-wrapper"><span class="btn-text">Подобрать программу</span><div class="btn-icon"><div class="icon"><svg viewBox="0 0 9 11" fill="none"><path d="M.5 1v9l8-4.5z" fill="currentColor"/></svg></div></div></div>
               </button>
             </div>
@@ -872,7 +924,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
       <div class="card-flick" id="cardFlick"><div class="card-flick_grid">
         <a class="card-flick_item is-active" href="#" data-enquire data-program="Рамадан у Каабы" data-cursor-text="Оставить заявку">
           <div class="card-flick_item-inner">
-            <div class="card-flick_image"><img decoding="async" src="img/1771170983433-1576bc4a7eec-1600.webp" srcset="img/1771170983433-1576bc4a7eec-640.webp 640w, img/1771170983433-1576bc4a7eec-1024.webp 1024w, img/1771170983433-1576bc4a7eec-1600.webp 1600w, img/1771170983433-1576bc4a7eec-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Кисва Каабы с золотой вязью ночью" loading="lazy"></div>
+            <div class="card-flick_image"><img decoding="async" src="img/1771170983433-1576bc4a7eec-1600.webp" srcset="img/1771170983433-1576bc4a7eec-640.webp 640w, img/1771170983433-1576bc4a7eec-1024.webp 1024w, img/1771170983433-1576bc4a7eec-1600.webp 1600w, img/1771170983433-1576bc4a7eec-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Кисва Каабы с золотой вязью ночью"></div>
             <div class="card-flick_overlay"></div>
             <div class="card-flick_content"><div class="card-flick_content-inner">
               <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Рамадан у Каабы</h3></div>
@@ -886,7 +938,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
         </a>
         <a class="card-flick_item" href="#" data-enquire data-program="Хадж" data-cursor-text="Оставить заявку">
           <div class="card-flick_item-inner">
-            <div class="card-flick_image"><img decoding="async" src="img/1713302752681-0b14c1034707-1600.webp" srcset="img/1713302752681-0b14c1034707-640.webp 640w, img/1713302752681-0b14c1034707-1024.webp 1024w, img/1713302752681-0b14c1034707-1600.webp 1600w, img/1713302752681-0b14c1034707-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Золотая вязь на кисве Каабы на фоне синего неба" loading="lazy"></div>
+            <div class="card-flick_image"><img decoding="async" src="img/1713302752681-0b14c1034707-1600.webp" srcset="img/1713302752681-0b14c1034707-640.webp 640w, img/1713302752681-0b14c1034707-1024.webp 1024w, img/1713302752681-0b14c1034707-1600.webp 1600w, img/1713302752681-0b14c1034707-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Золотая вязь на кисве Каабы на фоне синего неба"></div>
             <div class="card-flick_overlay"></div>
             <div class="card-flick_content"><div class="card-flick_content-inner">
               <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Хадж</h3></div>
@@ -900,7 +952,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
         </a>
         <a class="card-flick_item" href="#" data-enquire data-program="Мекка и Медина" data-cursor-text="Оставить заявку">
           <div class="card-flick_item-inner">
-            <div class="card-flick_image"><img decoding="async" src="img/1602733458155-647c07d32ef6-1600.webp" srcset="img/1602733458155-647c07d32ef6-640.webp 640w, img/1602733458155-647c07d32ef6-1024.webp 1024w, img/1602733458155-647c07d32ef6-1600.webp 1600w, img/1602733458155-647c07d32ef6-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Зелёный купол и минареты Пророческой мечети в мягком свете" loading="lazy"></div>
+            <div class="card-flick_image"><img decoding="async" src="img/1602733458155-647c07d32ef6-1600.webp" srcset="img/1602733458155-647c07d32ef6-640.webp 640w, img/1602733458155-647c07d32ef6-1024.webp 1024w, img/1602733458155-647c07d32ef6-1600.webp 1600w, img/1602733458155-647c07d32ef6-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Зелёный купол и минареты Пророческой мечети в мягком свете"></div>
             <div class="card-flick_overlay"></div>
             <div class="card-flick_content"><div class="card-flick_content-inner">
               <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Мекка и Медина</h3></div>
@@ -914,7 +966,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
         </a>
         <a class="card-flick_item" href="#" data-enquire data-program="Долгая умра" data-cursor-text="Оставить заявку">
           <div class="card-flick_item-inner">
-            <div class="card-flick_image"><img decoding="async" src="img/1558261537-8fcffa3479c7-1600.webp" srcset="img/1558261537-8fcffa3479c7-640.webp 640w, img/1558261537-8fcffa3479c7-1024.webp 1024w, img/1558261537-8fcffa3479c7-1600.webp 1600w" sizes="(max-width:768px) 100vw, 55vw" alt="Раскрытые зонты во дворе Пророческой мечети" loading="lazy"></div>
+            <div class="card-flick_image"><img decoding="async" src="img/1558261537-8fcffa3479c7-1600.webp" srcset="img/1558261537-8fcffa3479c7-640.webp 640w, img/1558261537-8fcffa3479c7-1024.webp 1024w, img/1558261537-8fcffa3479c7-1600.webp 1600w" sizes="(max-width:768px) 100vw, 55vw" alt="Раскрытые зонты во дворе Пророческой мечети"></div>
             <div class="card-flick_overlay"></div>
             <div class="card-flick_content"><div class="card-flick_content-inner">
               <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Долгая умра</h3></div>
@@ -928,7 +980,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
         </a>
         <a class="card-flick_item" href="#" data-enquire data-program="Умра за 5 дней" data-cursor-text="Оставить заявку">
           <div class="card-flick_item-inner">
-            <div class="card-flick_image"><img decoding="async" src="img/1677835238946-20fc43ab0533-1600.webp" srcset="img/1677835238946-20fc43ab0533-640.webp 640w, img/1677835238946-20fc43ab0533-1024.webp 1024w, img/1677835238946-20fc43ab0533-1600.webp 1600w, img/1677835238946-20fc43ab0533-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Арки и резные фасады мечети в тёплом свете" loading="lazy"></div>
+            <div class="card-flick_image"><img decoding="async" src="img/1677835238946-20fc43ab0533-1600.webp" srcset="img/1677835238946-20fc43ab0533-640.webp 640w, img/1677835238946-20fc43ab0533-1024.webp 1024w, img/1677835238946-20fc43ab0533-1600.webp 1600w, img/1677835238946-20fc43ab0533-2200.webp 2200w" sizes="(max-width:768px) 100vw, 55vw" alt="Арки и резные фасады мечети в тёплом свете"></div>
             <div class="card-flick_overlay"></div>
             <div class="card-flick_content"><div class="card-flick_content-inner">
               <div class="card-flick_header"><h3 class="card-flick_title t-title-italic">Умра за 5 дней</h3></div>
@@ -941,6 +993,13 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
           </div>
         </a>
       </div></div>
+      <div class="cf-controls" aria-label="Листание программ">
+        <div class="cf-dots"><button class="cf-dot is-on" type="button" aria-label="Программа 1"></button><button class="cf-dot" type="button" aria-label="Программа 2"></button><button class="cf-dot" type="button" aria-label="Программа 3"></button><button class="cf-dot" type="button" aria-label="Программа 4"></button><button class="cf-dot" type="button" aria-label="Программа 5"></button></div>
+        <div class="cf-arrows">
+          <button class="cf-arrow cf-prev" type="button" aria-label="Назад"><svg viewBox="0 0 16 10" fill="none"><path d="M15 5H1M5 1 1 5l4 4" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <button class="cf-arrow cf-next" type="button" aria-label="Вперёд"><svg viewBox="0 0 16 10" fill="none"><path d="M1 5h14M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1119,7 +1178,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
                       <div class="liquid-glass__filter"></div><div class="liquid-glass__overlay"></div><div class="liquid-glass__specular" style="--glass-scale:.35"></div>
                       <div class="globe-video_wrap">
                         <button class="btn btn-image" type="button" data-enquire>
-                          <div class="image-with-overlay" style="--overlay-opacity:.2;position:absolute;inset:0"><img decoding="async" class="image-with-overlay_img" src="img/1587617425953-9075d28b8c46-640.webp" srcset="img/1587617425953-9075d28b8c46-640.webp 640w, img/1587617425953-9075d28b8c46-1024.webp 1024w, img/1587617425953-9075d28b8c46-1600.webp 1600w, img/1587617425953-9075d28b8c46-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt="Коран на резной подставке и финики" loading="lazy"><div class="image-overlay"></div></div>
+                          <div class="image-with-overlay" style="--overlay-opacity:.2;position:absolute;inset:0"><img decoding="async" class="image-with-overlay_img" src="img/1587617425953-9075d28b8c46-640.webp" srcset="img/1587617425953-9075d28b8c46-640.webp 640w, img/1587617425953-9075d28b8c46-1024.webp 1024w, img/1587617425953-9075d28b8c46-1600.webp 1600w, img/1587617425953-9075d28b8c46-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt="Коран на резной подставке и финики" loading="lazy"><div class="image-overlay"></div></div>
                           <div class="btn-content-wrapper"><span class="btn-text">Оставить заявку</span><div class="btn-icon"><div class="icon"><svg viewBox="0 0 9 11" fill="none"><path d="M.5 1v9l8-4.5z" fill="currentColor"/></svg></div></div></div>
                         </button>
                       </div>
@@ -1147,7 +1206,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
 </main>
 
 <!-- ФУТЕР -->
-<footer class="footer-component">
+<footer class="footer-component" data-nav-theme="dark">
   <div class="footer">
     <div class="footer-container container-large">
       <div class="footer-layout u-grid">
@@ -1186,7 +1245,7 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
         <div class="footer-col col-4 offset-8">
           <div class="footer-cta_layout">
             <button class="btn btn-image" type="button" data-enquire>
-              <div class="image-with-overlay" style="--overlay-opacity:.2;position:absolute;inset:0"><img decoding="async" class="image-with-overlay_img" src="img/1667454496584-9838026037af-640.webp" srcset="img/1667454496584-9838026037af-640.webp 640w, img/1667454496584-9838026037af-1024.webp 1024w, img/1667454496584-9838026037af-1600.webp 1600w, img/1667454496584-9838026037af-2200.webp 2200w" sizes="(max-width:768px) 70vw, 35vw" alt="" loading="lazy"><div class="image-overlay"></div></div>
+              <div class="image-with-overlay" style="--overlay-opacity:.2;position:absolute;inset:0"><img decoding="async" class="image-with-overlay_img" src="img/1667454496584-9838026037af-640.webp" srcset="img/1667454496584-9838026037af-640.webp 640w, img/1667454496584-9838026037af-1024.webp 1024w, img/1667454496584-9838026037af-1600.webp 1600w, img/1667454496584-9838026037af-2200.webp 2200w" sizes="(max-width:768px) 85vw, 35vw" alt="" loading="lazy"><div class="image-overlay"></div></div>
               <div class="btn-content-wrapper"><span class="btn-text">Подобрать программу</span><div class="btn-icon"><div class="icon"><svg viewBox="0 0 9 11" fill="none"><path d="M.5 1v9l8-4.5z" fill="currentColor"/></svg></div></div></div>
             </button>
             <div class="footer-cta_grid">
@@ -1281,6 +1340,8 @@ body:has(.btn:hover) .custom-cursor{opacity:0}
     </div>
   </div>
 </div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Наверх"><svg viewBox="0 0 16 10" fill="none"><path d="M1 9l7-7 7 7" stroke="currentColor" stroke-width="1.3"/></svg></button>
 
 <!-- COOKIE -->
 <div class="cookie-banner" id="cookie" role="dialog" aria-label="Уведомление о cookie">
@@ -1490,9 +1551,12 @@ const hsSetup=()=>{
    ============================================================ */
 (()=>{
   if(!(window.d3&&window.topojson)) return;
-  const W=1440,H=1721, svg=$("#mapSvg"), land=$("#mapLand"), routeG=$("#mapRoute"), labels=$("#mapLabels");
+  const mob=!matchMedia("(min-width: 769px)").matches;
+  const W=mob?520:1440, H=mob?Math.round(520*(1.9*VH/VW)):1721, svg=$("#mapSvg"), land=$("#mapLand"), routeG=$("#mapRoute"), labels=$("#mapLabels");
   const MOW=[37.62,55.75], JED=[39.17,21.68];
-  const proj=d3.geoMercator().center([39.2,38.4]).scale(1180).translate([W/2,H/2]);
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.style.aspectRatio=`${W}/${H}`;
+  $$("rect",svg).forEach(r=>{r.setAttribute("width",W);r.setAttribute("height",H)});
+  const proj=d3.geoMercator().center([39.2,38.4]).scale(mob?H*0.72:1180).translate([W/2,H/2]);
   const P=c=>proj(c);
   const NS="http://www.w3.org/2000/svg";
   const el=(n,a={},p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e};
@@ -1510,7 +1574,7 @@ const hsSetup=()=>{
 
   /* маршрут — дуга между точками */
   const [sx,sy]=P(MOW),[ex,ey]=P(JED), mx=(sx+ex)/2, my=(sy+ey)/2;
-  const cx=mx-230, cy=my-60;
+  const cx=mx-(mob?110:230), cy=my-60;
   const d=`M${sx.toFixed(1)} ${sy.toFixed(1)} Q${cx.toFixed(1)} ${cy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
   el("path",{class:"route-base",d},routeG);
   const flown=el("path",{class:"route-flown",d},routeG);
@@ -1523,12 +1587,12 @@ const hsSetup=()=>{
   const len=flown.getTotalLength(); flown.style.strokeDasharray=len; flown.style.strokeDashoffset=len;
 
   /* подписи (проценты от размера карты) */
-  const add=(cls,html,c,dx=0,dy=0)=>{const [x,y]=P(c);const d=document.createElement("div");d.className="map-location_item "+cls;d.style.left=((x+dx)/W*100)+"%";d.style.top=((y+dy)/H*100)+"%";d.innerHTML=html;labels.appendChild(d)};
-  add("is-white",`<p class="t-title-italic is-faded">Отправление</p><p class="layout-title_md">Москва, Россия</p>`,MOW,0,-70);
+  const add=(cls,html,c,dx=0,dy=0)=>{const [x,y]=P(c); if(x<20||x>W-20) return;const d=document.createElement("div");d.className="map-location_item "+cls;d.style.left=((x+dx)/W*100)+"%";d.style.top=((y+dy)/H*100)+"%";d.innerHTML=html;labels.appendChild(d)};
+  add("is-white",`<p class="t-title-italic is-faded">Отправление</p><p class="layout-title_md">Москва, Россия</p>`,MOW,0,mob?-56:-70);
   add("",`<p class="layout-title_md is-faded_2">Чёрное<br>море</p>`,[34.5,43.2]);
   add("",`<p class="layout-title_md is-faded_2">Каспийское<br>море</p>`,[50.8,41.5]);
   add("",`<p class="layout-title_md is-faded_2">Красное<br>море</p>`,[36.3,25.2]);
-  add("is-white",`<p class="t-title-italic">Джидда → Мекка</p><p class="layout-title_md">Саудовская Аравия</p>`,JED,150,70);
+  add("is-white",`<p class="t-title-italic">Джидда → Мекка</p><p class="layout-title_md">Саудовская Аравия</p>`,JED,mob?70:150,mob?56:70);
 
   /* привязка к скроллу */
   const inner=$("#globeInner"), comp=$("#globeComp"), info=$(".is-info"), vid=$("#globeVid");
@@ -1536,9 +1600,9 @@ const hsSetup=()=>{
     const upd=p=>{ flown.style.strokeDashoffset=len*(1-p); const pt=flown.getPointAtLength(len*p); core.setAttribute("cx",pt.x);core.setAttribute("cy",pt.y); pings.forEach(c=>{c.setAttribute("cx",pt.x);c.setAttribute("cy",pt.y)}); };
     ScrollTrigger.create({trigger:svg,start:"top bottom",end:"bottom top",scrub:true,invalidateOnRefresh:true,onUpdate:s=>upd(s.progress)});
     upd(0);
-    gsap.to(inner,{y:()=>VH,ease:"none",scrollTrigger:{trigger:comp,start:"top top",end:"bottom top",scrub:true,invalidateOnRefresh:true}});
-    gsap.fromTo(inner,{yPercent:-5},{yPercent:0,ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"top top",scrub:true,invalidateOnRefresh:true}});
     gsap.matchMedia().add("(min-width: 769px)",()=>{
+      gsap.to(inner,{y:()=>VH,ease:"none",scrollTrigger:{trigger:comp,start:"top top",end:"bottom top",scrub:true,invalidateOnRefresh:true}});
+      gsap.fromTo(inner,{yPercent:-5},{yPercent:0,ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"top top",scrub:true,invalidateOnRefresh:true}});
       gsap.fromTo(vid,{y:()=>VH},{y:()=>-VH*.2,ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"bottom top",scrub:true,invalidateOnRefresh:true}});
       gsap.fromTo(info,{y:"0vh"},{y:"40vh",ease:"none",scrollTrigger:{trigger:comp,start:"top bottom",end:"bottom bottom",scrub:true,invalidateOnRefresh:true}});
     });
@@ -1663,6 +1727,30 @@ $$("[data-consent]").forEach(b=>b.addEventListener("click",()=>{store.set("cooki
 /* Подпись логотипа в футере: вписать по ширине */
 const fitFooter=()=>{const el=$("#footerLogo"),w=el.clientWidth; if(!w) return; el.style.fontSize="100px"; const tw=$("#footerLogoText").getBoundingClientRect().width; el.style.fontSize=(100*w/tw*.985)+"px"; el.style.height=(parseFloat(el.style.fontSize)*.86)+"px"};
 document.fonts&&document.fonts.ready.then(fitFooter); addEventListener("resize",fitFooter); addEventListener("load",fitFooter);
+
+/* ============================================================
+   Телефон: карусель программ и кнопка «наверх»
+   ============================================================ */
+(()=>{
+  const grid=$(".card-flick_grid"), items=$$(".card-flick_item"), dots=$$(".cf-dot"), prev=$(".cf-prev"), next=$(".cf-next");
+  if(grid&&dots.length){
+    const step=()=>items[1].getBoundingClientRect().left-items[0].getBoundingClientRect().left;
+    const upd=()=>{ if(getComputedStyle(grid).overflowX!=="auto") return; const i=Math.max(0,Math.min(items.length-1,Math.round(grid.scrollLeft/step())));
+      dots.forEach((d,k)=>d.classList.toggle("is-on",k===i)); prev.disabled=i===0; next.disabled=i===items.length-1; };
+    grid.addEventListener("scroll",upd,{passive:true});
+    prev.addEventListener("click",()=>grid.scrollBy({left:-step(),behavior:"smooth"}));
+    next.addEventListener("click",()=>grid.scrollBy({left:step(),behavior:"smooth"}));
+    dots.forEach((d,k)=>d.addEventListener("click",()=>grid.scrollTo({left:k*step(),behavior:"smooth"})));
+    upd();
+  }
+  const top=$("#toTop");
+  if(top){
+    let lastY=scrollY;   // кнопка появляется, когда листаешь вверх
+    const chk=()=>{ const y=scrollY; if(y<VH*1.2) top.classList.remove("is-on"); else if(y<lastY-4) top.classList.add("is-on"); else if(y>lastY+4) top.classList.remove("is-on"); lastY=y; };
+    addEventListener("scroll",chk,{passive:true}); chk();
+    top.addEventListener("click",()=>{ lenis?lenis.scrollTo(0,{duration:1.4}):window.scrollTo({top:0,behavior:"smooth"}) });
+  }
+})();
 
 document.fonts&&document.fonts.ready.then(()=>ScrollTrigger.refresh());
 addEventListener("resize",()=>{ if(innerWidth!==VW){VW=innerWidth;VH=innerHeight;ScrollTrigger.refresh();} });

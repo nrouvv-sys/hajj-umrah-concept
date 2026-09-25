@@ -23,7 +23,9 @@
 </script>
 
 <noscript><style>.preloader{display:none}[data-reveal]{animation:none!important}</style></noscript>
+<link rel="preload" href="fonts/benzin-bold.otf" as="font" type="font/otf" crossorigin>
 <style>
+@font-face{font-family:"Benzin";src:url("fonts/benzin-bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
 /* ============================================================
    1. ТОКЕНЫ
    ============================================================ */
@@ -310,7 +312,7 @@ body.is-ready [data-reveal]{animation-play-state:running}
 .hero-banner_col .t-title-italic{font-size:var(--s-1375);text-shadow:0 1px 18px rgba(9,11,16,.7),0 0 2px rgba(9,11,16,.5)}
 .hero-banner_title-contain{grid-row:3;display:flex;align-items:flex-end;padding-bottom:var(--sp-4)}
 .hero-banner_title-wrapper,.hero-banner_title-inner{width:100%}
-.hero-banner_title{text-shadow:0 2px 40px rgba(9,11,16,.35);white-space:nowrap;text-transform:uppercase;font:400 var(--s-16)/1 var(--font-condensed);text-align:center;will-change:filter}
+.hero-banner_title{text-shadow:0 2px 40px rgba(9,11,16,.35);white-space:nowrap;text-transform:uppercase;font:700 var(--s-16)/1.1 "Benzin",var(--font-condensed);letter-spacing:-.01em;text-align:center;will-change:filter}
 .clouds-overlay_wrap{position:absolute;top:0;left:0;width:100%;height:100svh;z-index:2;pointer-events:none}
 .clouds-overlay_wrap img{width:100%;height:auto}
 
